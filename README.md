@@ -4,6 +4,8 @@ This is the repository for Yunpeng Jiao's MSc Project of the Edinburgh Universit
 
 The directory is organized as the following directory tree. The experiment folder contains the scripts, data sets, intermediate files, and outcomes of the experiments. The src folder contains all the source code of this project. Every folder has its own README file for detail discription.
 
+```bash
 .
 ├── experiment
 └── src
+```
