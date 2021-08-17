@@ -1,0 +1,864 @@
+[2021-06-15 04:07:56] [marian] Marian v1.10.20; fe74576 2021-05-04 12:36:37 +0100
+[2021-06-15 04:07:56] [marian] Running on fulla as process 231158 with command line:
+[2021-06-15 04:07:56] [marian] /fs/magni0/yunpengjiao/repos/marian-dev/build-fulla/marian -d 0 1 2 3 4 5 6 7 --pretrained-model /home/yunpengjiao/yunpengjiao/mscproject/experiment/de-en_wmt21_pretrain_sp_ext_de/model/model/model.npz.best-translation.npz -c /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/scripts/config-trans.yml -m /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz --mini-batch-fit -w 5000 --mini-batch 1000 --maxi-batch 1000 --train-sets /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/data/raw/train-all.raw.ha-en.ha /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/data/raw/train-all.raw.ha-en.en --vocabs /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/data/spm/vocab.ha-en.spm /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/data/spm/vocab.ha-en.spm --sentencepiece-max-lines 0 --valid-script-path /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/scripts/validate.sh --valid-sets /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/data/raw/dev.tag.ha /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/data/raw/dev.raw.en --valid-log /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/logs/valid.log --log /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/logs/train.log
+[2021-06-15 04:07:56] [config] after: 0e
+[2021-06-15 04:07:56] [config] after-batches: 0
+[2021-06-15 04:07:56] [config] after-epochs: 0
+[2021-06-15 04:07:56] [config] all-caps-every: 0
+[2021-06-15 04:07:56] [config] allow-unk: false
+[2021-06-15 04:07:56] [config] authors: false
+[2021-06-15 04:07:56] [config] beam-size: 12
+[2021-06-15 04:07:56] [config] bert-class-symbol: "[CLS]"
+[2021-06-15 04:07:56] [config] bert-mask-symbol: "[MASK]"
+[2021-06-15 04:07:56] [config] bert-masking-fraction: 0.15
+[2021-06-15 04:07:56] [config] bert-sep-symbol: "[SEP]"
+[2021-06-15 04:07:56] [config] bert-train-type-embeddings: true
+[2021-06-15 04:07:56] [config] bert-type-vocab-size: 2
+[2021-06-15 04:07:56] [config] build-info: ""
+[2021-06-15 04:07:56] [config] check-gradient-nan: false
+[2021-06-15 04:07:56] [config] check-nan: false
+[2021-06-15 04:07:56] [config] cite: false
+[2021-06-15 04:07:56] [config] clip-norm: 5
+[2021-06-15 04:07:56] [config] cost-scaling:
+[2021-06-15 04:07:56] [config]   []
+[2021-06-15 04:07:56] [config] cost-type: ce-sum
+[2021-06-15 04:07:56] [config] cpu-threads: 0
+[2021-06-15 04:07:56] [config] data-weighting: ""
+[2021-06-15 04:07:56] [config] data-weighting-type: sentence
+[2021-06-15 04:07:56] [config] dec-cell: gru
+[2021-06-15 04:07:56] [config] dec-cell-base-depth: 2
+[2021-06-15 04:07:56] [config] dec-cell-high-depth: 1
+[2021-06-15 04:07:56] [config] dec-depth: 6
+[2021-06-15 04:07:56] [config] devices:
+[2021-06-15 04:07:56] [config]   - 0
+[2021-06-15 04:07:56] [config]   - 1
+[2021-06-15 04:07:56] [config]   - 2
+[2021-06-15 04:07:56] [config]   - 3
+[2021-06-15 04:07:56] [config]   - 4
+[2021-06-15 04:07:56] [config]   - 5
+[2021-06-15 04:07:56] [config]   - 6
+[2021-06-15 04:07:56] [config]   - 7
+[2021-06-15 04:07:56] [config] dim-emb: 512
+[2021-06-15 04:07:56] [config] dim-rnn: 1024
+[2021-06-15 04:07:56] [config] dim-vocabs:
+[2021-06-15 04:07:56] [config]   - 0
+[2021-06-15 04:07:56] [config]   - 0
+[2021-06-15 04:07:56] [config] disp-first: 0
+[2021-06-15 04:07:56] [config] disp-freq: 500
+[2021-06-15 04:07:56] [config] disp-label-counts: true
+[2021-06-15 04:07:56] [config] dropout-rnn: 0
+[2021-06-15 04:07:56] [config] dropout-src: 0.1
+[2021-06-15 04:07:56] [config] dropout-trg: 0.1
+[2021-06-15 04:07:56] [config] dump-config: ""
+[2021-06-15 04:07:56] [config] dynamic-gradient-scaling:
+[2021-06-15 04:07:56] [config]   []
+[2021-06-15 04:07:56] [config] early-stopping: 10
+[2021-06-15 04:07:56] [config] embedding-fix-src: false
+[2021-06-15 04:07:56] [config] embedding-fix-trg: false
+[2021-06-15 04:07:56] [config] embedding-normalization: false
+[2021-06-15 04:07:56] [config] embedding-vectors:
+[2021-06-15 04:07:56] [config]   []
+[2021-06-15 04:07:56] [config] enc-cell: gru
+[2021-06-15 04:07:56] [config] enc-cell-depth: 2
+[2021-06-15 04:07:56] [config] enc-depth: 6
+[2021-06-15 04:07:56] [config] enc-type: bidirectional
+[2021-06-15 04:07:56] [config] english-title-case-every: 0
+[2021-06-15 04:07:56] [config] exponential-smoothing: 1e-4
+[2021-06-15 04:07:56] [config] factor-weight: 1
+[2021-06-15 04:07:56] [config] gradient-checkpointing: false
+[2021-06-15 04:07:56] [config] gradient-norm-average-window: 100
+[2021-06-15 04:07:56] [config] guided-alignment: none
+[2021-06-15 04:07:56] [config] guided-alignment-cost: mse
+[2021-06-15 04:07:56] [config] guided-alignment-weight: 0.1
+[2021-06-15 04:07:56] [config] ignore-model-config: false
+[2021-06-15 04:07:56] [config] input-types:
+[2021-06-15 04:07:56] [config]   []
+[2021-06-15 04:07:56] [config] interpolate-env-vars: false
+[2021-06-15 04:07:56] [config] keep-best: true
+[2021-06-15 04:07:56] [config] label-smoothing: 0.1
+[2021-06-15 04:07:56] [config] layer-normalization: true
+[2021-06-15 04:07:56] [config] learn-rate: 0.0003
+[2021-06-15 04:07:56] [config] lemma-dim-emb: 0
+[2021-06-15 04:07:56] [config] log: /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/logs/train.log
+[2021-06-15 04:07:56] [config] log-level: info
+[2021-06-15 04:07:56] [config] log-time-zone: ""
+[2021-06-15 04:07:56] [config] logical-epoch:
+[2021-06-15 04:07:56] [config]   - 1e
+[2021-06-15 04:07:56] [config]   - 0
+[2021-06-15 04:07:56] [config] lr-decay: 0
+[2021-06-15 04:07:56] [config] lr-decay-freq: 50000
+[2021-06-15 04:07:56] [config] lr-decay-inv-sqrt:
+[2021-06-15 04:07:56] [config]   - 16000
+[2021-06-15 04:07:56] [config] lr-decay-repeat-warmup: false
+[2021-06-15 04:07:56] [config] lr-decay-reset-optimizer: false
+[2021-06-15 04:07:56] [config] lr-decay-start:
+[2021-06-15 04:07:56] [config]   - 10
+[2021-06-15 04:07:56] [config]   - 1
+[2021-06-15 04:07:56] [config] lr-decay-strategy: epoch+stalled
+[2021-06-15 04:07:56] [config] lr-report: true
+[2021-06-15 04:07:56] [config] lr-warmup: 16000
+[2021-06-15 04:07:56] [config] lr-warmup-at-reload: false
+[2021-06-15 04:07:56] [config] lr-warmup-cycle: false
+[2021-06-15 04:07:56] [config] lr-warmup-start-rate: 0
+[2021-06-15 04:07:56] [config] max-length: 100
+[2021-06-15 04:07:56] [config] max-length-crop: false
+[2021-06-15 04:07:56] [config] max-length-factor: 3
+[2021-06-15 04:07:56] [config] maxi-batch: 1000
+[2021-06-15 04:07:56] [config] maxi-batch-sort: trg
+[2021-06-15 04:07:56] [config] mini-batch: 1000
+[2021-06-15 04:07:56] [config] mini-batch-fit: true
+[2021-06-15 04:07:56] [config] mini-batch-fit-step: 10
+[2021-06-15 04:07:56] [config] mini-batch-round-up: true
+[2021-06-15 04:07:56] [config] mini-batch-track-lr: false
+[2021-06-15 04:07:56] [config] mini-batch-warmup: 0
+[2021-06-15 04:07:56] [config] mini-batch-words: 0
+[2021-06-15 04:07:56] [config] mini-batch-words-ref: 0
+[2021-06-15 04:07:56] [config] model: /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz
+[2021-06-15 04:07:56] [config] multi-loss-type: sum
+[2021-06-15 04:07:56] [config] n-best: false
+[2021-06-15 04:07:56] [config] no-nccl: false
+[2021-06-15 04:07:56] [config] no-reload: false
+[2021-06-15 04:07:56] [config] no-restore-corpus: false
+[2021-06-15 04:07:56] [config] normalize: 1.0
+[2021-06-15 04:07:56] [config] normalize-gradient: false
+[2021-06-15 04:07:56] [config] num-devices: 0
+[2021-06-15 04:07:56] [config] optimizer: adam
+[2021-06-15 04:07:56] [config] optimizer-delay: 1
+[2021-06-15 04:07:56] [config] optimizer-params:
+[2021-06-15 04:07:56] [config]   - 0.9
+[2021-06-15 04:07:56] [config]   - 0.98
+[2021-06-15 04:07:56] [config]   - 1e-9
+[2021-06-15 04:07:56] [config] output-omit-bias: false
+[2021-06-15 04:07:56] [config] overwrite: false
+[2021-06-15 04:07:56] [config] precision:
+[2021-06-15 04:07:56] [config]   - float32
+[2021-06-15 04:07:56] [config]   - float32
+[2021-06-15 04:07:56] [config] pretrained-model: /home/yunpengjiao/yunpengjiao/mscproject/experiment/de-en_wmt21_pretrain_sp_ext_de/model/model/model.npz.best-translation.npz
+[2021-06-15 04:07:56] [config] quantize-biases: false
+[2021-06-15 04:07:56] [config] quantize-bits: 0
+[2021-06-15 04:07:56] [config] quantize-log-based: false
+[2021-06-15 04:07:56] [config] quantize-optimization-steps: 0
+[2021-06-15 04:07:56] [config] quiet: false
+[2021-06-15 04:07:56] [config] quiet-translation: true
+[2021-06-15 04:07:56] [config] relative-paths: false
+[2021-06-15 04:07:56] [config] right-left: false
+[2021-06-15 04:07:56] [config] save-freq: 5000
+[2021-06-15 04:07:56] [config] seed: 1111
+[2021-06-15 04:07:56] [config] sentencepiece-alphas:
+[2021-06-15 04:07:56] [config]   []
+[2021-06-15 04:07:56] [config] sentencepiece-max-lines: 0
+[2021-06-15 04:07:56] [config] sentencepiece-options: ""
+[2021-06-15 04:07:56] [config] sharding: global
+[2021-06-15 04:07:56] [config] shuffle: data
+[2021-06-15 04:07:56] [config] shuffle-in-ram: false
+[2021-06-15 04:07:56] [config] sigterm: save-and-exit
+[2021-06-15 04:07:56] [config] skip: false
+[2021-06-15 04:07:56] [config] sqlite: ""
+[2021-06-15 04:07:56] [config] sqlite-drop: false
+[2021-06-15 04:07:56] [config] sync-freq: 200u
+[2021-06-15 04:07:56] [config] sync-sgd: true
+[2021-06-15 04:07:56] [config] tempdir: /tmp
+[2021-06-15 04:07:56] [config] tied-embeddings: true
+[2021-06-15 04:07:56] [config] tied-embeddings-all: false
+[2021-06-15 04:07:56] [config] tied-embeddings-src: false
+[2021-06-15 04:07:56] [config] train-embedder-rank:
+[2021-06-15 04:07:56] [config]   []
+[2021-06-15 04:07:56] [config] train-sets:
+[2021-06-15 04:07:56] [config]   - /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/data/raw/train-all.raw.ha-en.ha
+[2021-06-15 04:07:56] [config]   - /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/data/raw/train-all.raw.ha-en.en
+[2021-06-15 04:07:56] [config] transformer-aan-activation: swish
+[2021-06-15 04:07:56] [config] transformer-aan-depth: 2
+[2021-06-15 04:07:56] [config] transformer-aan-nogate: false
+[2021-06-15 04:07:56] [config] transformer-decoder-autoreg: self-attention
+[2021-06-15 04:07:56] [config] transformer-depth-scaling: false
+[2021-06-15 04:07:56] [config] transformer-dim-aan: 2048
+[2021-06-15 04:07:56] [config] transformer-dim-ffn: 2048
+[2021-06-15 04:07:56] [config] transformer-dropout: 0.1
+[2021-06-15 04:07:56] [config] transformer-dropout-attention: 0
+[2021-06-15 04:07:56] [config] transformer-dropout-ffn: 0
+[2021-06-15 04:07:56] [config] transformer-ffn-activation: swish
+[2021-06-15 04:07:56] [config] transformer-ffn-depth: 2
+[2021-06-15 04:07:56] [config] transformer-guided-alignment-layer: last
+[2021-06-15 04:07:56] [config] transformer-heads: 8
+[2021-06-15 04:07:56] [config] transformer-no-projection: false
+[2021-06-15 04:07:56] [config] transformer-pool: false
+[2021-06-15 04:07:56] [config] transformer-postprocess: dan
+[2021-06-15 04:07:56] [config] transformer-postprocess-emb: d
+[2021-06-15 04:07:56] [config] transformer-postprocess-top: ""
+[2021-06-15 04:07:56] [config] transformer-preprocess: ""
+[2021-06-15 04:07:56] [config] transformer-tied-layers:
+[2021-06-15 04:07:56] [config]   []
+[2021-06-15 04:07:56] [config] transformer-train-position-embeddings: false
+[2021-06-15 04:07:56] [config] tsv: false
+[2021-06-15 04:07:56] [config] tsv-fields: 0
+[2021-06-15 04:07:56] [config] type: transformer
+[2021-06-15 04:07:56] [config] ulr: false
+[2021-06-15 04:07:56] [config] ulr-dim-emb: 0
+[2021-06-15 04:07:56] [config] ulr-dropout: 0
+[2021-06-15 04:07:56] [config] ulr-keys-vectors: ""
+[2021-06-15 04:07:56] [config] ulr-query-vectors: ""
+[2021-06-15 04:07:56] [config] ulr-softmax-temperature: 1
+[2021-06-15 04:07:56] [config] ulr-trainable-transformation: false
+[2021-06-15 04:07:56] [config] unlikelihood-loss: false
+[2021-06-15 04:07:56] [config] valid-freq: 5000
+[2021-06-15 04:07:56] [config] valid-log: /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/logs/valid.log
+[2021-06-15 04:07:56] [config] valid-max-length: 1000
+[2021-06-15 04:07:56] [config] valid-metrics:
+[2021-06-15 04:07:56] [config]   - cross-entropy
+[2021-06-15 04:07:56] [config]   - perplexity
+[2021-06-15 04:07:56] [config]   - bleu-detok
+[2021-06-15 04:07:56] [config] valid-mini-batch: 16
+[2021-06-15 04:07:56] [config] valid-reset-stalled: false
+[2021-06-15 04:07:56] [config] valid-script-args:
+[2021-06-15 04:07:56] [config]   []
+[2021-06-15 04:07:56] [config] valid-script-path: /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/scripts/validate.sh
+[2021-06-15 04:07:56] [config] valid-sets:
+[2021-06-15 04:07:56] [config]   - /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/data/raw/dev.tag.ha
+[2021-06-15 04:07:56] [config]   - /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/data/raw/dev.raw.en
+[2021-06-15 04:07:56] [config] valid-translation-output: ""
+[2021-06-15 04:07:56] [config] vocabs:
+[2021-06-15 04:07:56] [config]   - /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/data/spm/vocab.ha-en.spm
+[2021-06-15 04:07:56] [config]   - /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/data/spm/vocab.ha-en.spm
+[2021-06-15 04:07:56] [config] word-penalty: 0
+[2021-06-15 04:07:56] [config] word-scores: false
+[2021-06-15 04:07:56] [config] workspace: 5000
+[2021-06-15 04:07:56] [config] Model is being created with Marian v1.10.20; fe74576 2021-05-04 12:36:37 +0100
+[2021-06-15 04:07:56] Using synchronous SGD
+[2021-06-15 04:07:56] [comm] Compiled without MPI support. Running as a single process on fulla
+[2021-06-15 04:07:56] Synced seed 1111
+[2021-06-15 04:07:56] [data] Loading SentencePiece vocabulary from file /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/data/spm/vocab.ha-en.spm
+[2021-06-15 04:07:56] [data] Setting vocabulary size for input 0 to 32,000
+[2021-06-15 04:07:56] [data] Loading SentencePiece vocabulary from file /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/data/spm/vocab.ha-en.spm
+[2021-06-15 04:07:56] [data] Setting vocabulary size for input 1 to 32,000
+[2021-06-15 04:07:56] [batching] Collecting statistics for batch fitting with step size 10
+[2021-06-15 04:07:57] [memory] Extending reserved space to 5120 MB (device gpu0)
+[2021-06-15 04:07:57] [memory] Extending reserved space to 5120 MB (device gpu1)
+[2021-06-15 04:07:57] [memory] Extending reserved space to 5120 MB (device gpu2)
+[2021-06-15 04:07:58] [memory] Extending reserved space to 5120 MB (device gpu3)
+[2021-06-15 04:07:59] [memory] Extending reserved space to 5120 MB (device gpu4)
+[2021-06-15 04:07:59] [memory] Extending reserved space to 5120 MB (device gpu5)
+[2021-06-15 04:07:59] [memory] Extending reserved space to 5120 MB (device gpu6)
+[2021-06-15 04:08:00] [memory] Extending reserved space to 5120 MB (device gpu7)
+[2021-06-15 04:08:00] [comm] Using NCCL 2.8.3 for GPU communication
+[2021-06-15 04:08:00] [comm] Using global sharding
+[2021-06-15 04:08:01] [comm] NCCLCommunicators constructed successfully
+[2021-06-15 04:08:01] [training] Using 8 GPUs
+[2021-06-15 04:08:01] [logits] Applying loss function for 1 factor(s)
+[2021-06-15 04:08:01] [memory] Reserving 293 MB, device gpu0
+[2021-06-15 04:08:02] [gpu] 16-bit TensorCores enabled for float32 matrix operations
+[2021-06-15 04:08:02] [memory] Reserving 293 MB, device gpu0
+[2021-06-15 04:08:10] [batching] Done. Typical MB size is 35,960 target words
+[2021-06-15 04:08:10] [memory] Extending reserved space to 5120 MB (device gpu0)
+[2021-06-15 04:08:10] [memory] Extending reserved space to 5120 MB (device gpu1)
+[2021-06-15 04:08:11] [memory] Extending reserved space to 5120 MB (device gpu2)
+[2021-06-15 04:08:11] [memory] Extending reserved space to 5120 MB (device gpu3)
+[2021-06-15 04:08:11] [memory] Extending reserved space to 5120 MB (device gpu4)
+[2021-06-15 04:08:11] [memory] Extending reserved space to 5120 MB (device gpu5)
+[2021-06-15 04:08:11] [memory] Extending reserved space to 5120 MB (device gpu6)
+[2021-06-15 04:08:11] [memory] Extending reserved space to 5120 MB (device gpu7)
+[2021-06-15 04:08:11] [comm] Using NCCL 2.8.3 for GPU communication
+[2021-06-15 04:08:11] [comm] Using global sharding
+[2021-06-15 04:08:12] [comm] NCCLCommunicators constructed successfully
+[2021-06-15 04:08:12] [training] Using 8 GPUs
+[2021-06-15 04:08:12] [training] Initializing model weights with pre-trained model /home/yunpengjiao/yunpengjiao/mscproject/experiment/de-en_wmt21_pretrain_sp_ext_de/model/model/model.npz.best-translation.npz
+[2021-06-15 04:08:12] Loading model from /home/yunpengjiao/yunpengjiao/mscproject/experiment/de-en_wmt21_pretrain_sp_ext_de/model/model/model.npz.best-translation.npz
+[2021-06-15 04:08:16] Loading model from /home/yunpengjiao/yunpengjiao/mscproject/experiment/de-en_wmt21_pretrain_sp_ext_de/model/model/model.npz.best-translation.npz
+[2021-06-15 04:08:17] Loading model from /home/yunpengjiao/yunpengjiao/mscproject/experiment/de-en_wmt21_pretrain_sp_ext_de/model/model/model.npz.best-translation.npz
+[2021-06-15 04:08:18] Loading model from /home/yunpengjiao/yunpengjiao/mscproject/experiment/de-en_wmt21_pretrain_sp_ext_de/model/model/model.npz.best-translation.npz
+[2021-06-15 04:08:20] Loading model from /home/yunpengjiao/yunpengjiao/mscproject/experiment/de-en_wmt21_pretrain_sp_ext_de/model/model/model.npz.best-translation.npz
+[2021-06-15 04:08:21] Loading model from /home/yunpengjiao/yunpengjiao/mscproject/experiment/de-en_wmt21_pretrain_sp_ext_de/model/model/model.npz.best-translation.npz
+[2021-06-15 04:08:22] Loading model from /home/yunpengjiao/yunpengjiao/mscproject/experiment/de-en_wmt21_pretrain_sp_ext_de/model/model/model.npz.best-translation.npz
+[2021-06-15 04:08:23] Loading model from /home/yunpengjiao/yunpengjiao/mscproject/experiment/de-en_wmt21_pretrain_sp_ext_de/model/model/model.npz.best-translation.npz
+[2021-06-15 04:08:25] Training started
+[2021-06-15 04:08:25] [data] Shuffling data
+[2021-06-15 04:11:49] [data] Done reading 96,302,721 sentences
+[2021-06-15 04:21:26] [data] Done shuffling 96,302,721 sentences to temp files
+[2021-06-15 04:24:02] [training] Batches are processed as 1 process(es) x 8 devices/process
+[2021-06-15 04:24:02] [memory] Reserving 293 MB, device gpu7
+[2021-06-15 04:24:02] [memory] Reserving 293 MB, device gpu5
+[2021-06-15 04:24:02] [memory] Reserving 293 MB, device gpu6
+[2021-06-15 04:24:02] [memory] Reserving 293 MB, device gpu0
+[2021-06-15 04:24:02] [memory] Reserving 293 MB, device gpu1
+[2021-06-15 04:24:02] [memory] Reserving 293 MB, device gpu3
+[2021-06-15 04:24:02] [memory] Reserving 293 MB, device gpu4
+[2021-06-15 04:24:02] [memory] Reserving 293 MB, device gpu2
+[2021-06-15 04:24:02] [memory] Reserving 293 MB, device gpu0
+[2021-06-15 04:24:03] [memory] Reserving 293 MB, device gpu7
+[2021-06-15 04:24:03] [memory] Reserving 293 MB, device gpu2
+[2021-06-15 04:24:04] [memory] Reserving 293 MB, device gpu3
+[2021-06-15 04:24:04] [memory] Reserving 293 MB, device gpu1
+[2021-06-15 04:24:04] [memory] Reserving 293 MB, device gpu4
+[2021-06-15 04:24:05] [memory] Reserving 293 MB, device gpu5
+[2021-06-15 04:24:05] [memory] Reserving 293 MB, device gpu6
+[2021-06-15 04:24:05] Allocating memory for general optimizer shards
+[2021-06-15 04:24:05] Parameter type float32, optimization type float32, casting types false
+[2021-06-15 04:24:05] [memory] Reserving 36 MB, device gpu7
+[2021-06-15 04:24:05] [memory] Reserving 36 MB, device gpu1
+[2021-06-15 04:24:05] [memory] Reserving 36 MB, device gpu4
+[2021-06-15 04:24:05] [memory] Reserving 36 MB, device gpu6
+[2021-06-15 04:24:05] [memory] Reserving 36 MB, device gpu2
+[2021-06-15 04:24:05] [memory] Reserving 36 MB, device gpu0
+[2021-06-15 04:24:05] [memory] Reserving 36 MB, device gpu3
+[2021-06-15 04:24:05] [memory] Reserving 36 MB, device gpu5
+[2021-06-15 04:24:05] Allocating memory for Adam-specific shards
+[2021-06-15 04:24:05] [memory] Reserving 73 MB, device gpu6
+[2021-06-15 04:24:05] [memory] Reserving 73 MB, device gpu7
+[2021-06-15 04:24:05] [memory] Reserving 73 MB, device gpu4
+[2021-06-15 04:24:05] [memory] Reserving 73 MB, device gpu3
+[2021-06-15 04:24:05] [memory] Reserving 73 MB, device gpu2
+[2021-06-15 04:24:05] [memory] Reserving 73 MB, device gpu0
+[2021-06-15 04:24:05] [memory] Reserving 73 MB, device gpu1
+[2021-06-15 04:24:05] [memory] Reserving 73 MB, device gpu5
+[2021-06-15 04:27:15] Ep. 1 : Up. 500 : Sen. 468,934 : Cost 8.62125969 * 11,691,743 @ 27,456 after 11,691,743 : Time 1144.32s : 10217.17 words/s : gNorm 4.7688 : L.r. 9.3750e-06
+[2021-06-15 04:30:23] Ep. 1 : Up. 1000 : Sen. 926,302 : Cost 7.04487944 * 11,682,627 @ 17,892 after 23,374,370 : Time 188.54s : 61964.19 words/s : gNorm 3.9125 : L.r. 1.8750e-05
+[2021-06-15 04:33:33] Ep. 1 : Up. 1500 : Sen. 1,397,023 : Cost 6.21000004 * 11,781,762 @ 28,520 after 35,156,132 : Time 189.85s : 62058.18 words/s : gNorm 3.3193 : L.r. 2.8125e-05
+[2021-06-15 04:36:42] Ep. 1 : Up. 2000 : Sen. 1,863,999 : Cost 5.44808388 * 11,571,995 @ 26,640 after 46,728,127 : Time 188.45s : 61407.78 words/s : gNorm 3.2636 : L.r. 3.7500e-05
+[2021-06-15 04:39:51] Ep. 1 : Up. 2500 : Sen. 2,309,306 : Cost 4.83906841 * 11,732,589 @ 24,272 after 58,460,716 : Time 189.35s : 61963.59 words/s : gNorm 2.3687 : L.r. 4.6875e-05
+[2021-06-15 04:43:00] Ep. 1 : Up. 3000 : Sen. 2,761,719 : Cost 4.45936871 * 11,730,769 @ 25,704 after 70,191,485 : Time 189.26s : 61980.67 words/s : gNorm 2.0261 : L.r. 5.6250e-05
+[2021-06-15 04:46:09] Ep. 1 : Up. 3500 : Sen. 3,209,720 : Cost 4.18605661 * 11,578,217 @ 32,200 after 81,769,702 : Time 188.34s : 61474.99 words/s : gNorm 4.1987 : L.r. 6.5625e-05
+[2021-06-15 04:49:18] Ep. 1 : Up. 4000 : Sen. 3,668,598 : Cost 4.02152061 * 11,843,491 @ 3,792 after 93,613,193 : Time 189.30s : 62565.86 words/s : gNorm 2.7423 : L.r. 7.5000e-05
+[2021-06-15 04:52:26] Ep. 1 : Up. 4500 : Sen. 4,139,195 : Cost 3.80280209 * 11,446,366 @ 19,968 after 105,059,559 : Time 188.21s : 60816.34 words/s : gNorm 5.1822 : L.r. 8.4375e-05
+[2021-06-15 04:55:35] Ep. 1 : Up. 5000 : Sen. 4,615,478 : Cost 3.72035718 * 11,639,092 @ 24,960 after 116,698,651 : Time 189.30s : 61486.26 words/s : gNorm 1.9693 : L.r. 9.3750e-05
+[2021-06-15 04:55:35] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.iter5000.npz
+[2021-06-15 04:55:40] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz
+[2021-06-15 04:55:47] Saving Adam parameters
+[2021-06-15 04:55:52] [training] Saving training checkpoint to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz and /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.optimizer.npz
+[2021-06-15 04:56:09] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-cross-entropy.npz
+[2021-06-15 04:56:15] [valid] Ep. 1 : Up. 5000 : cross-entropy : 107.529 : new best
+[2021-06-15 04:56:15] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-perplexity.npz
+[2021-06-15 04:56:21] [valid] Ep. 1 : Up. 5000 : perplexity : 29.7305 : new best
+[2021-06-15 04:56:21] [valid] First sentence's tokens as scored:
+[2021-06-15 04:56:21] [valid] Decoding validation set with SentencePieceVocab for scoring
+[2021-06-15 04:56:21] [valid]   Hyp: It was sacked a police officer because the stabbing happened to Taylor , except other police none of them .
+[2021-06-15 04:56:21] [valid]   Ref: One police officer has been fired because of the Taylor incident , but charges have not been brought against the other officers .
+[2021-06-15 04:56:31] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-bleu-detok.npz
+[2021-06-15 04:56:37] [valid] Ep. 1 : Up. 5000 : bleu-detok : 12.2618 : new best
+[2021-06-15 04:59:46] Ep. 1 : Up. 5500 : Sen. 5,073,336 : Cost 3.63129997 * 11,751,214 @ 22,464 after 128,449,865 : Time 250.60s : 46893.14 words/s : gNorm 2.1182 : L.r. 1.0313e-04
+[2021-06-15 05:02:56] Ep. 1 : Up. 6000 : Sen. 5,529,782 : Cost 3.51034832 * 11,720,935 @ 24,272 after 140,170,800 : Time 189.87s : 61729.94 words/s : gNorm 1.8042 : L.r. 1.1250e-04
+[2021-06-15 05:06:04] Ep. 1 : Up. 6500 : Sen. 5,986,936 : Cost 3.46426916 * 11,562,943 @ 11,140 after 151,733,743 : Time 188.04s : 61493.53 words/s : gNorm 1.7523 : L.r. 1.2188e-04
+[2021-06-15 05:09:14] Ep. 1 : Up. 7000 : Sen. 6,451,735 : Cost 3.37147093 * 11,678,940 @ 24,840 after 163,412,683 : Time 189.79s : 61536.99 words/s : gNorm 1.3421 : L.r. 1.3125e-04
+[2021-06-15 05:12:23] Ep. 1 : Up. 7500 : Sen. 6,913,278 : Cost 3.39272547 * 11,715,132 @ 26,885 after 175,127,815 : Time 188.92s : 62010.53 words/s : gNorm 1.4240 : L.r. 1.4063e-04
+[2021-06-15 05:15:32] Ep. 1 : Up. 8000 : Sen. 7,369,398 : Cost 3.28242922 * 11,582,472 @ 10,787 after 186,710,287 : Time 189.14s : 61238.05 words/s : gNorm 1.6183 : L.r. 1.5000e-04
+[2021-06-15 05:18:41] Ep. 1 : Up. 8500 : Sen. 7,834,490 : Cost 3.30488396 * 11,735,631 @ 31,208 after 198,445,918 : Time 189.26s : 62008.68 words/s : gNorm 1.3364 : L.r. 1.5938e-04
+[2021-06-15 05:21:50] Ep. 1 : Up. 9000 : Sen. 8,297,505 : Cost 3.19127131 * 11,697,071 @ 28,080 after 210,142,989 : Time 189.09s : 61859.09 words/s : gNorm 1.1370 : L.r. 1.6875e-04
+[2021-06-15 05:24:59] Ep. 1 : Up. 9500 : Sen. 8,751,475 : Cost 3.20597839 * 11,692,106 @ 28,560 after 221,835,095 : Time 189.08s : 61837.42 words/s : gNorm 1.3476 : L.r. 1.7813e-04
+[2021-06-15 05:28:08] Ep. 1 : Up. 10000 : Sen. 9,222,733 : Cost 3.19581413 * 11,577,408 @ 5,760 after 233,412,503 : Time 188.99s : 61258.51 words/s : gNorm 1.3145 : L.r. 1.8750e-04
+[2021-06-15 05:28:08] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.iter10000.npz
+[2021-06-15 05:28:14] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz
+[2021-06-15 05:28:21] Saving Adam parameters
+[2021-06-15 05:28:25] [training] Saving training checkpoint to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz and /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.optimizer.npz
+[2021-06-15 05:28:43] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-cross-entropy.npz
+[2021-06-15 05:28:49] [valid] Ep. 1 : Up. 10000 : cross-entropy : 83.8979 : new best
+[2021-06-15 05:28:49] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-perplexity.npz
+[2021-06-15 05:28:55] [valid] Ep. 1 : Up. 10000 : perplexity : 14.1075 : new best
+[2021-06-15 05:29:03] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-bleu-detok.npz
+[2021-06-15 05:29:08] [valid] Ep. 1 : Up. 10000 : bleu-detok : 16.7025 : new best
+[2021-06-15 05:32:17] Ep. 1 : Up. 10500 : Sen. 9,672,230 : Cost 3.12924099 * 11,674,138 @ 23,184 after 245,086,641 : Time 249.10s : 46866.20 words/s : gNorm 1.0733 : L.r. 1.9688e-04
+[2021-06-15 05:35:26] Ep. 1 : Up. 11000 : Sen. 10,132,983 : Cost 3.12215376 * 11,738,603 @ 27,456 after 256,825,244 : Time 189.07s : 62085.07 words/s : gNorm 1.2389 : L.r. 2.0625e-04
+[2021-06-15 05:38:36] Ep. 1 : Up. 11500 : Sen. 10,602,213 : Cost 3.09451103 * 11,604,708 @ 23,126 after 268,429,952 : Time 189.39s : 61274.94 words/s : gNorm 1.3267 : L.r. 2.1563e-04
+[2021-06-15 05:41:44] Ep. 1 : Up. 12000 : Sen. 11,061,701 : Cost 3.06678843 * 11,746,812 @ 26,680 after 280,176,764 : Time 188.79s : 62222.48 words/s : gNorm 1.7763 : L.r. 2.2500e-04
+[2021-06-15 05:44:54] Ep. 1 : Up. 12500 : Sen. 11,518,652 : Cost 3.02043390 * 11,699,604 @ 23,328 after 291,876,368 : Time 189.91s : 61606.50 words/s : gNorm 1.1668 : L.r. 2.3438e-04
+[2021-06-15 05:48:03] Ep. 1 : Up. 13000 : Sen. 11,985,134 : Cost 3.05525589 * 11,699,757 @ 24,840 after 303,576,125 : Time 188.57s : 62043.87 words/s : gNorm 1.1193 : L.r. 2.4375e-04
+[2021-06-15 05:51:12] Ep. 1 : Up. 13500 : Sen. 12,440,848 : Cost 3.00321865 * 11,605,301 @ 28,520 after 315,181,426 : Time 189.30s : 61305.18 words/s : gNorm 1.0909 : L.r. 2.5313e-04
+[2021-06-15 05:54:21] Ep. 1 : Up. 14000 : Sen. 12,891,530 : Cost 3.03623366 * 11,762,241 @ 26,640 after 326,943,667 : Time 189.08s : 62209.21 words/s : gNorm 1.0814 : L.r. 2.6250e-04
+[2021-06-15 05:57:31] Ep. 1 : Up. 14500 : Sen. 13,365,923 : Cost 2.96213984 * 11,737,165 @ 25,488 after 338,680,832 : Time 189.56s : 61919.16 words/s : gNorm 1.0799 : L.r. 2.7188e-04
+[2021-06-15 06:00:40] Ep. 1 : Up. 15000 : Sen. 13,812,706 : Cost 2.99501324 * 11,733,150 @ 22,080 after 350,413,982 : Time 189.14s : 62032.98 words/s : gNorm 1.0815 : L.r. 2.8125e-04
+[2021-06-15 06:00:40] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.iter15000.npz
+[2021-06-15 06:00:45] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz
+[2021-06-15 06:00:52] Saving Adam parameters
+[2021-06-15 06:00:57] [training] Saving training checkpoint to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz and /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.optimizer.npz
+[2021-06-15 06:01:15] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-cross-entropy.npz
+[2021-06-15 06:01:20] [valid] Ep. 1 : Up. 15000 : cross-entropy : 75.4967 : new best
+[2021-06-15 06:01:21] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-perplexity.npz
+[2021-06-15 06:01:26] [valid] Ep. 1 : Up. 15000 : perplexity : 10.823 : new best
+[2021-06-15 06:01:34] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-bleu-detok.npz
+[2021-06-15 06:01:39] [valid] Ep. 1 : Up. 15000 : bleu-detok : 18.5995 : new best
+[2021-06-15 06:04:49] Ep. 1 : Up. 15500 : Sen. 14,275,741 : Cost 2.95725489 * 11,708,717 @ 28,080 after 362,122,699 : Time 248.81s : 47058.24 words/s : gNorm 1.1507 : L.r. 2.9063e-04
+[2021-06-15 06:07:58] Ep. 1 : Up. 16000 : Sen. 14,749,924 : Cost 3.00448442 * 11,543,099 @ 24,840 after 373,665,798 : Time 189.15s : 61025.10 words/s : gNorm 1.4791 : L.r. 3.0000e-04
+[2021-06-15 06:11:07] Ep. 1 : Up. 16500 : Sen. 15,201,554 : Cost 2.94448519 * 11,589,407 @ 23,000 after 385,255,205 : Time 188.67s : 61426.10 words/s : gNorm 1.1840 : L.r. 2.9542e-04
+[2021-06-15 06:14:16] Ep. 1 : Up. 17000 : Sen. 15,664,331 : Cost 2.94760585 * 11,616,255 @ 28,398 after 396,871,460 : Time 189.15s : 61414.50 words/s : gNorm 1.0956 : L.r. 2.9104e-04
+[2021-06-15 06:17:25] Ep. 1 : Up. 17500 : Sen. 16,118,318 : Cost 2.89646649 * 11,738,837 @ 23,712 after 408,610,297 : Time 189.30s : 62012.96 words/s : gNorm 1.1293 : L.r. 2.8685e-04
+[2021-06-15 06:20:34] Ep. 1 : Up. 18000 : Sen. 16,591,779 : Cost 2.93543315 * 11,549,440 @ 26,712 after 420,159,737 : Time 189.24s : 61030.59 words/s : gNorm 1.0068 : L.r. 2.8284e-04
+[2021-06-15 06:23:43] Ep. 1 : Up. 18500 : Sen. 17,045,801 : Cost 2.88331509 * 11,813,858 @ 17,472 after 431,973,595 : Time 188.97s : 62518.64 words/s : gNorm 0.8489 : L.r. 2.7899e-04
+[2021-06-15 06:26:53] Ep. 1 : Up. 19000 : Sen. 17,490,671 : Cost 2.86915421 * 11,686,408 @ 22,080 after 443,660,003 : Time 189.80s : 61570.62 words/s : gNorm 1.9289 : L.r. 2.7530e-04
+[2021-06-15 06:30:02] Ep. 1 : Up. 19500 : Sen. 17,964,200 : Cost 2.88546538 * 11,575,527 @ 33,120 after 455,235,530 : Time 188.91s : 61274.52 words/s : gNorm 1.1025 : L.r. 2.7175e-04
+[2021-06-15 06:33:12] Ep. 1 : Up. 20000 : Sen. 18,416,524 : Cost 2.87715602 * 11,708,648 @ 25,920 after 466,944,178 : Time 189.80s : 61690.17 words/s : gNorm 1.0425 : L.r. 2.6833e-04
+[2021-06-15 06:33:12] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.iter20000.npz
+[2021-06-15 06:33:17] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz
+[2021-06-15 06:33:24] Saving Adam parameters
+[2021-06-15 06:33:29] [training] Saving training checkpoint to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz and /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.optimizer.npz
+[2021-06-15 06:33:47] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-cross-entropy.npz
+[2021-06-15 06:33:52] [valid] Ep. 1 : Up. 20000 : cross-entropy : 71.5045 : new best
+[2021-06-15 06:33:53] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-perplexity.npz
+[2021-06-15 06:33:58] [valid] Ep. 1 : Up. 20000 : perplexity : 9.5423 : new best
+[2021-06-15 06:34:07] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-bleu-detok.npz
+[2021-06-15 06:34:12] [valid] Ep. 1 : Up. 20000 : bleu-detok : 19.2347 : new best
+[2021-06-15 06:37:21] Ep. 1 : Up. 20500 : Sen. 18,888,478 : Cost 2.84975004 * 11,649,714 @ 15,330 after 478,593,892 : Time 248.81s : 46822.14 words/s : gNorm 1.3432 : L.r. 2.6504e-04
+[2021-06-15 06:40:30] Ep. 1 : Up. 21000 : Sen. 19,341,150 : Cost 2.81589937 * 11,786,749 @ 12,096 after 490,380,641 : Time 189.74s : 62120.11 words/s : gNorm 0.9131 : L.r. 2.6186e-04
+[2021-06-15 06:43:39] Ep. 1 : Up. 21500 : Sen. 19,809,236 : Cost 2.84251714 * 11,609,242 @ 13,272 after 501,989,883 : Time 188.77s : 61499.18 words/s : gNorm 0.9294 : L.r. 2.5880e-04
+[2021-06-15 06:46:48] Ep. 1 : Up. 22000 : Sen. 20,263,317 : Cost 2.83340979 * 11,559,100 @ 21,216 after 513,548,983 : Time 188.98s : 61165.73 words/s : gNorm 0.8580 : L.r. 2.5584e-04
+[2021-06-15 06:49:57] Ep. 1 : Up. 22500 : Sen. 20,739,468 : Cost 2.81942272 * 11,649,949 @ 22,464 after 525,198,932 : Time 189.32s : 61535.33 words/s : gNorm 0.9661 : L.r. 2.5298e-04
+[2021-06-15 06:53:07] Ep. 1 : Up. 23000 : Sen. 21,197,979 : Cost 2.84925413 * 11,760,261 @ 21,600 after 536,959,193 : Time 189.21s : 62153.76 words/s : gNorm 0.8971 : L.r. 2.5022e-04
+[2021-06-15 06:56:16] Ep. 1 : Up. 23500 : Sen. 21,656,450 : Cost 2.78940582 * 11,766,355 @ 26,208 after 548,725,548 : Time 189.62s : 62052.16 words/s : gNorm 1.7329 : L.r. 2.4754e-04
+[2021-06-15 06:59:24] Ep. 1 : Up. 24000 : Sen. 22,108,596 : Cost 2.78568506 * 11,539,684 @ 23,920 after 560,265,232 : Time 188.02s : 61374.27 words/s : gNorm 1.2819 : L.r. 2.4495e-04
+[2021-06-15 07:02:34] Ep. 1 : Up. 24500 : Sen. 22,584,468 : Cost 2.81348634 * 11,664,560 @ 25,200 after 571,929,792 : Time 189.88s : 61430.04 words/s : gNorm 1.0332 : L.r. 2.4244e-04
+[2021-06-15 07:05:43] Ep. 1 : Up. 25000 : Sen. 23,036,728 : Cost 2.76081347 * 11,775,689 @ 15,168 after 583,705,481 : Time 188.91s : 62335.62 words/s : gNorm 0.7720 : L.r. 2.4000e-04
+[2021-06-15 07:05:43] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.iter25000.npz
+[2021-06-15 07:05:49] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz
+[2021-06-15 07:05:55] Saving Adam parameters
+[2021-06-15 07:06:00] [training] Saving training checkpoint to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz and /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.optimizer.npz
+[2021-06-15 07:06:18] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-cross-entropy.npz
+[2021-06-15 07:06:24] [valid] Ep. 1 : Up. 25000 : cross-entropy : 69.1357 : new best
+[2021-06-15 07:06:24] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-perplexity.npz
+[2021-06-15 07:06:30] [valid] Ep. 1 : Up. 25000 : perplexity : 8.8552 : new best
+[2021-06-15 07:06:38] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-bleu-detok.npz
+[2021-06-15 07:06:43] [valid] Ep. 1 : Up. 25000 : bleu-detok : 19.621 : new best
+[2021-06-15 07:09:53] Ep. 1 : Up. 25500 : Sen. 23,488,143 : Cost 2.76550126 * 11,729,403 @ 33,120 after 595,434,884 : Time 249.73s : 46968.79 words/s : gNorm 0.8845 : L.r. 2.3764e-04
+[2021-06-15 07:13:01] Ep. 1 : Up. 26000 : Sen. 23,958,270 : Cost 2.78781629 * 11,630,596 @ 29,278 after 607,065,480 : Time 188.30s : 61765.01 words/s : gNorm 0.8333 : L.r. 2.3534e-04
+[2021-06-15 07:16:11] Ep. 1 : Up. 26500 : Sen. 24,424,845 : Cost 2.76985240 * 11,620,442 @ 6,016 after 618,685,922 : Time 189.65s : 61272.43 words/s : gNorm 0.8912 : L.r. 2.3311e-04
+[2021-06-15 07:19:20] Ep. 1 : Up. 27000 : Sen. 24,884,618 : Cost 2.75941539 * 11,718,347 @ 31,968 after 630,404,269 : Time 189.04s : 61989.82 words/s : gNorm 1.5654 : L.r. 2.3094e-04
+[2021-06-15 07:22:30] Ep. 1 : Up. 27500 : Sen. 25,350,151 : Cost 2.75621438 * 12,007,168 @ 26,352 after 642,411,437 : Time 190.29s : 63100.43 words/s : gNorm 0.7248 : L.r. 2.2883e-04
+[2021-06-15 07:25:38] Ep. 1 : Up. 28000 : Sen. 25,805,158 : Cost 2.73981309 * 11,388,347 @ 3,067 after 653,799,784 : Time 188.16s : 60524.44 words/s : gNorm 1.3381 : L.r. 2.2678e-04
+[2021-06-15 07:28:47] Ep. 1 : Up. 28500 : Sen. 26,255,322 : Cost 2.73955202 * 11,534,370 @ 21,600 after 665,334,154 : Time 188.70s : 61125.92 words/s : gNorm 1.7459 : L.r. 2.2478e-04
+[2021-06-15 07:31:56] Ep. 1 : Up. 29000 : Sen. 26,713,868 : Cost 2.76229072 * 11,729,991 @ 24,864 after 677,064,145 : Time 189.33s : 61956.57 words/s : gNorm 0.7764 : L.r. 2.2283e-04
+[2021-06-15 07:35:06] Ep. 1 : Up. 29500 : Sen. 27,186,482 : Cost 2.70450878 * 11,705,559 @ 26,680 after 688,769,704 : Time 189.53s : 61760.06 words/s : gNorm 0.9979 : L.r. 2.2094e-04
+[2021-06-15 07:38:15] Ep. 1 : Up. 30000 : Sen. 27,641,276 : Cost 2.73166037 * 11,680,113 @ 5,376 after 700,449,817 : Time 189.26s : 61715.75 words/s : gNorm 0.7508 : L.r. 2.1909e-04
+[2021-06-15 07:38:15] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.iter30000.npz
+[2021-06-15 07:38:20] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz
+[2021-06-15 07:38:27] Saving Adam parameters
+[2021-06-15 07:38:32] [training] Saving training checkpoint to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz and /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.optimizer.npz
+[2021-06-15 07:38:51] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-cross-entropy.npz
+[2021-06-15 07:38:57] [valid] Ep. 1 : Up. 30000 : cross-entropy : 67.6977 : new best
+[2021-06-15 07:38:58] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-perplexity.npz
+[2021-06-15 07:39:05] [valid] Ep. 1 : Up. 30000 : perplexity : 8.46247 : new best
+[2021-06-15 07:39:13] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-bleu-detok.npz
+[2021-06-15 07:39:22] [valid] Ep. 1 : Up. 30000 : bleu-detok : 20.1852 : new best
+[2021-06-15 07:42:31] Ep. 1 : Up. 30500 : Sen. 28,109,469 : Cost 2.75356388 * 11,749,402 @ 14,400 after 712,199,219 : Time 255.89s : 45916.30 words/s : gNorm 0.9336 : L.r. 2.1729e-04
+[2021-06-15 07:45:40] Ep. 1 : Up. 31000 : Sen. 28,572,615 : Cost 2.70575738 * 11,656,098 @ 21,216 after 723,855,317 : Time 189.38s : 61548.65 words/s : gNorm 0.7295 : L.r. 2.1553e-04
+[2021-06-15 07:48:49] Ep. 1 : Up. 31500 : Sen. 29,027,056 : Cost 2.73305011 * 11,720,903 @ 18,720 after 735,576,220 : Time 188.68s : 62121.11 words/s : gNorm 0.6763 : L.r. 2.1381e-04
+[2021-06-15 07:51:59] Ep. 1 : Up. 32000 : Sen. 29,478,927 : Cost 2.70304179 * 11,589,562 @ 21,216 after 747,165,782 : Time 189.62s : 61119.74 words/s : gNorm 1.1928 : L.r. 2.1213e-04
+[2021-06-15 07:55:07] Ep. 1 : Up. 32500 : Sen. 29,947,587 : Cost 2.73763657 * 11,714,409 @ 21,160 after 758,880,191 : Time 188.54s : 62131.61 words/s : gNorm 0.8254 : L.r. 2.1049e-04
+[2021-06-15 07:58:17] Ep. 1 : Up. 33000 : Sen. 30,418,314 : Cost 2.70259547 * 11,774,778 @ 22,080 after 770,654,969 : Time 190.24s : 61895.50 words/s : gNorm 0.7761 : L.r. 2.0889e-04
+[2021-06-15 08:01:26] Ep. 1 : Up. 33500 : Sen. 30,881,929 : Cost 2.69611907 * 11,783,521 @ 25,200 after 782,438,490 : Time 189.03s : 62338.41 words/s : gNorm 0.8193 : L.r. 2.0733e-04
+[2021-06-15 08:04:35] Ep. 1 : Up. 34000 : Sen. 31,331,098 : Cost 2.71615934 * 11,533,828 @ 31,200 after 793,972,318 : Time 188.86s : 61070.75 words/s : gNorm 0.7064 : L.r. 2.0580e-04
+[2021-06-15 08:07:45] Ep. 1 : Up. 34500 : Sen. 31,797,174 : Cost 2.71569252 * 11,656,649 @ 15,456 after 805,628,967 : Time 189.26s : 61591.92 words/s : gNorm 0.8997 : L.r. 2.0430e-04
+[2021-06-15 08:10:54] Ep. 1 : Up. 35000 : Sen. 32,249,273 : Cost 2.67904615 * 11,709,062 @ 17,064 after 817,338,029 : Time 189.16s : 61899.09 words/s : gNorm 0.7683 : L.r. 2.0284e-04
+[2021-06-15 08:10:54] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.iter35000.npz
+[2021-06-15 08:10:59] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz
+[2021-06-15 08:11:06] Saving Adam parameters
+[2021-06-15 08:11:11] [training] Saving training checkpoint to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz and /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.optimizer.npz
+[2021-06-15 08:11:29] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-cross-entropy.npz
+[2021-06-15 08:11:34] [valid] Ep. 1 : Up. 35000 : cross-entropy : 66.8173 : new best
+[2021-06-15 08:11:35] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-perplexity.npz
+[2021-06-15 08:11:40] [valid] Ep. 1 : Up. 35000 : perplexity : 8.23066 : new best
+[2021-06-15 08:11:48] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-bleu-detok.npz
+[2021-06-15 08:11:54] [valid] Ep. 1 : Up. 35000 : bleu-detok : 20.685 : new best
+[2021-06-15 08:15:03] Ep. 1 : Up. 35500 : Sen. 32,704,366 : Cost 2.68853188 * 11,787,894 @ 23,312 after 829,125,923 : Time 249.27s : 47290.45 words/s : gNorm 0.7059 : L.r. 2.0140e-04
+[2021-06-15 08:18:13] Ep. 1 : Up. 36000 : Sen. 33,171,756 : Cost 2.67501712 * 11,671,459 @ 25,456 after 840,797,382 : Time 189.51s : 61587.31 words/s : gNorm 0.7558 : L.r. 2.0000e-04
+[2021-06-15 08:21:22] Ep. 1 : Up. 36500 : Sen. 33,620,220 : Cost 2.70209742 * 11,596,529 @ 20,160 after 852,393,911 : Time 189.26s : 61272.24 words/s : gNorm 0.8338 : L.r. 1.9863e-04
+[2021-06-15 08:24:31] Ep. 1 : Up. 37000 : Sen. 34,100,499 : Cost 2.67975926 * 11,703,424 @ 23,712 after 864,097,335 : Time 188.78s : 61996.02 words/s : gNorm 0.7175 : L.r. 1.9728e-04
+[2021-06-15 08:27:40] Ep. 1 : Up. 37500 : Sen. 34,575,383 : Cost 2.67693686 * 11,600,682 @ 16,560 after 875,698,017 : Time 189.71s : 61148.26 words/s : gNorm 1.4420 : L.r. 1.9596e-04
+[2021-06-15 08:30:49] Ep. 1 : Up. 38000 : Sen. 35,017,185 : Cost 2.69328046 * 11,752,671 @ 24,480 after 887,450,688 : Time 188.60s : 62316.08 words/s : gNorm 0.6312 : L.r. 1.9467e-04
+[2021-06-15 08:33:59] Ep. 1 : Up. 38500 : Sen. 35,474,158 : Cost 2.67255521 * 11,677,964 @ 23,680 after 899,128,652 : Time 189.92s : 61489.67 words/s : gNorm 1.2930 : L.r. 1.9340e-04
+[2021-06-15 08:37:07] Ep. 1 : Up. 39000 : Sen. 35,936,185 : Cost 2.67309308 * 11,677,995 @ 26,208 after 910,806,647 : Time 188.68s : 61891.64 words/s : gNorm 0.6034 : L.r. 1.9215e-04
+[2021-06-15 08:40:18] Ep. 1 : Up. 39500 : Sen. 36,390,803 : Cost 2.67457175 * 11,794,165 @ 13,776 after 922,600,812 : Time 190.09s : 62045.17 words/s : gNorm 0.6715 : L.r. 1.9093e-04
+[2021-06-15 08:43:26] Ep. 1 : Up. 40000 : Sen. 36,854,365 : Cost 2.65384507 * 11,536,554 @ 24,960 after 934,137,366 : Time 188.23s : 61288.93 words/s : gNorm 0.8180 : L.r. 1.8974e-04
+[2021-06-15 08:43:26] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.iter40000.npz
+[2021-06-15 08:43:31] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz
+[2021-06-15 08:43:37] Saving Adam parameters
+[2021-06-15 08:43:42] [training] Saving training checkpoint to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz and /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.optimizer.npz
+[2021-06-15 08:44:00] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-cross-entropy.npz
+[2021-06-15 08:44:05] [valid] Ep. 1 : Up. 40000 : cross-entropy : 66.0873 : new best
+[2021-06-15 08:44:06] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-perplexity.npz
+[2021-06-15 08:44:11] [valid] Ep. 1 : Up. 40000 : perplexity : 8.04329 : new best
+[2021-06-15 08:44:19] [valid] Ep. 1 : Up. 40000 : bleu-detok : 20.6691 : stalled 1 times (last best: 20.685)
+[2021-06-15 08:47:29] Ep. 1 : Up. 40500 : Sen. 37,326,185 : Cost 2.68631458 * 11,613,941 @ 27,232 after 945,751,307 : Time 242.88s : 47817.32 words/s : gNorm 0.8648 : L.r. 1.8856e-04
+[2021-06-15 08:50:38] Ep. 1 : Up. 41000 : Sen. 37,774,112 : Cost 2.64511251 * 11,755,436 @ 33,696 after 957,506,743 : Time 189.12s : 62158.30 words/s : gNorm 0.9676 : L.r. 1.8741e-04
+[2021-06-15 08:53:47] Ep. 1 : Up. 41500 : Sen. 38,251,303 : Cost 2.67906594 * 11,691,911 @ 21,160 after 969,198,654 : Time 189.40s : 61731.30 words/s : gNorm 0.6810 : L.r. 1.8628e-04
+[2021-06-15 08:56:57] Ep. 1 : Up. 42000 : Sen. 38,707,636 : Cost 2.66232634 * 11,705,727 @ 27,456 after 980,904,381 : Time 189.53s : 61763.04 words/s : gNorm 0.6994 : L.r. 1.8516e-04
+[2021-06-15 09:00:06] Ep. 1 : Up. 42500 : Sen. 39,185,798 : Cost 2.64431143 * 11,708,132 @ 19,120 after 992,612,513 : Time 189.37s : 61825.21 words/s : gNorm 0.9940 : L.r. 1.8407e-04
+[2021-06-15 09:03:16] Ep. 1 : Up. 43000 : Sen. 39,643,233 : Cost 2.64114642 * 11,675,408 @ 21,216 after 1,004,287,921 : Time 189.50s : 61611.28 words/s : gNorm 0.8822 : L.r. 1.8300e-04
+[2021-06-15 09:06:25] Ep. 1 : Up. 43500 : Sen. 40,097,612 : Cost 2.66616893 * 11,672,452 @ 25,944 after 1,015,960,373 : Time 189.05s : 61742.16 words/s : gNorm 0.8220 : L.r. 1.8194e-04
+[2021-06-15 09:09:35] Ep. 1 : Up. 44000 : Sen. 40,562,339 : Cost 2.64690256 * 11,779,038 @ 25,449 after 1,027,739,411 : Time 190.05s : 61979.31 words/s : gNorm 0.7939 : L.r. 1.8091e-04
+[2021-06-15 09:12:43] Ep. 1 : Up. 44500 : Sen. 41,014,087 : Cost 2.65328288 * 11,654,906 @ 23,000 after 1,039,394,317 : Time 188.62s : 61792.01 words/s : gNorm 0.7187 : L.r. 1.7989e-04
+[2021-06-15 09:15:54] Ep. 1 : Up. 45000 : Sen. 41,445,666 : Cost 2.64376855 * 11,815,296 @ 23,088 after 1,051,209,613 : Time 190.23s : 62109.28 words/s : gNorm 0.6786 : L.r. 1.7889e-04
+[2021-06-15 09:15:54] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.iter45000.npz
+[2021-06-15 09:15:59] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz
+[2021-06-15 09:16:05] Saving Adam parameters
+[2021-06-15 09:16:10] [training] Saving training checkpoint to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz and /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.optimizer.npz
+[2021-06-15 09:16:27] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-cross-entropy.npz
+[2021-06-15 09:16:33] [valid] Ep. 1 : Up. 45000 : cross-entropy : 65.557 : new best
+[2021-06-15 09:16:33] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-perplexity.npz
+[2021-06-15 09:16:39] [valid] Ep. 1 : Up. 45000 : perplexity : 7.90986 : new best
+[2021-06-15 09:16:47] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-bleu-detok.npz
+[2021-06-15 09:16:52] [valid] Ep. 1 : Up. 45000 : bleu-detok : 21.1402 : new best
+[2021-06-15 09:20:01] Ep. 1 : Up. 45500 : Sen. 41,937,855 : Cost 2.64848566 * 11,552,170 @ 22,080 after 1,062,761,783 : Time 247.29s : 46714.18 words/s : gNorm 1.0230 : L.r. 1.7790e-04
+[2021-06-15 09:23:10] Ep. 1 : Up. 46000 : Sen. 42,403,459 : Cost 2.60513258 * 11,565,183 @ 26,640 after 1,074,326,966 : Time 189.18s : 61134.18 words/s : gNorm 0.9159 : L.r. 1.7693e-04
+[2021-06-15 09:26:19] Ep. 1 : Up. 46500 : Sen. 42,850,598 : Cost 2.64900136 * 11,713,333 @ 22,464 after 1,086,040,299 : Time 189.18s : 61917.35 words/s : gNorm 0.8213 : L.r. 1.7598e-04
+[2021-06-15 09:29:29] Ep. 1 : Up. 47000 : Sen. 43,311,823 : Cost 2.67558384 * 11,607,591 @ 24,648 after 1,097,647,890 : Time 189.44s : 61274.64 words/s : gNorm 0.9525 : L.r. 1.7504e-04
+[2021-06-15 09:32:38] Ep. 1 : Up. 47500 : Sen. 43,764,232 : Cost 2.61482668 * 11,701,912 @ 24,192 after 1,109,349,802 : Time 189.46s : 61763.46 words/s : gNorm 0.7186 : L.r. 1.7411e-04
+[2021-06-15 09:35:48] Ep. 1 : Up. 48000 : Sen. 44,242,882 : Cost 2.62728977 * 11,718,268 @ 19,320 after 1,121,068,070 : Time 189.42s : 61865.50 words/s : gNorm 0.7555 : L.r. 1.7321e-04
+[2021-06-15 09:38:57] Ep. 1 : Up. 48500 : Sen. 44,709,881 : Cost 2.63191319 * 11,669,738 @ 23,000 after 1,132,737,808 : Time 189.45s : 61598.92 words/s : gNorm 0.8807 : L.r. 1.7231e-04
+[2021-06-15 09:42:06] Ep. 1 : Up. 49000 : Sen. 45,175,152 : Cost 2.64192724 * 11,789,629 @ 5,040 after 1,144,527,437 : Time 189.41s : 62244.13 words/s : gNorm 0.6924 : L.r. 1.7143e-04
+[2021-06-15 09:45:16] Ep. 1 : Up. 49500 : Sen. 45,619,173 : Cost 2.60257268 * 11,652,305 @ 25,760 after 1,156,179,742 : Time 189.50s : 61490.20 words/s : gNorm 0.6794 : L.r. 1.7056e-04
+[2021-06-15 09:48:25] Ep. 1 : Up. 50000 : Sen. 46,086,372 : Cost 2.65294743 * 11,670,814 @ 16,224 after 1,167,850,556 : Time 189.04s : 61738.29 words/s : gNorm 0.7523 : L.r. 1.6971e-04
+[2021-06-15 09:48:25] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.iter50000.npz
+[2021-06-15 09:48:30] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz
+[2021-06-15 09:48:37] Saving Adam parameters
+[2021-06-15 09:48:42] [training] Saving training checkpoint to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz and /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.optimizer.npz
+[2021-06-15 09:48:59] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-cross-entropy.npz
+[2021-06-15 09:49:05] [valid] Ep. 1 : Up. 50000 : cross-entropy : 65.1492 : new best
+[2021-06-15 09:49:05] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-perplexity.npz
+[2021-06-15 09:49:11] [valid] Ep. 1 : Up. 50000 : perplexity : 7.80876 : new best
+[2021-06-15 09:49:19] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-bleu-detok.npz
+[2021-06-15 09:49:25] [valid] Ep. 1 : Up. 50000 : bleu-detok : 21.3571 : new best
+[2021-06-15 09:52:34] Ep. 1 : Up. 50500 : Sen. 46,547,787 : Cost 2.64881611 * 11,714,430 @ 30,360 after 1,179,564,986 : Time 249.09s : 47028.50 words/s : gNorm 0.7795 : L.r. 1.6886e-04
+[2021-06-15 09:55:43] Ep. 1 : Up. 51000 : Sen. 47,009,128 : Cost 2.58499074 * 11,647,149 @ 16,224 after 1,191,212,135 : Time 188.86s : 61669.60 words/s : gNorm 2.1796 : L.r. 1.6803e-04
+[2021-06-15 09:58:53] Ep. 1 : Up. 51500 : Sen. 47,455,274 : Cost 2.57470417 * 11,778,860 @ 30,784 after 1,202,990,995 : Time 190.35s : 61879.72 words/s : gNorm 0.7408 : L.r. 1.6722e-04
+[2021-06-15 10:02:02] Ep. 1 : Up. 52000 : Sen. 47,923,266 : Cost 2.65861869 * 11,612,516 @ 27,824 after 1,214,603,511 : Time 188.45s : 61622.30 words/s : gNorm 0.7458 : L.r. 1.6641e-04
+[2021-06-15 10:05:12] Ep. 1 : Up. 52500 : Sen. 48,400,102 : Cost 2.61989188 * 11,748,562 @ 30,576 after 1,226,352,073 : Time 190.25s : 61753.06 words/s : gNorm 0.8175 : L.r. 1.6562e-04
+[2021-06-15 10:08:21] Ep. 1 : Up. 53000 : Sen. 48,867,326 : Cost 2.61727810 * 11,558,839 @ 26,680 after 1,237,910,912 : Time 188.75s : 61238.67 words/s : gNorm 0.8900 : L.r. 1.6483e-04
+[2021-06-15 10:11:30] Ep. 1 : Up. 53500 : Sen. 49,322,138 : Cost 2.63037634 * 11,583,006 @ 11,376 after 1,249,493,918 : Time 189.43s : 61146.47 words/s : gNorm 0.9731 : L.r. 1.6406e-04
+[2021-06-15 10:14:40] Ep. 1 : Up. 54000 : Sen. 49,777,522 : Cost 2.64186645 * 11,759,763 @ 24,696 after 1,261,253,681 : Time 189.41s : 62086.68 words/s : gNorm 0.6662 : L.r. 1.6330e-04
+[2021-06-15 10:17:50] Ep. 1 : Up. 54500 : Sen. 50,249,474 : Cost 2.58616352 * 11,872,863 @ 28,080 after 1,273,126,544 : Time 190.23s : 62413.83 words/s : gNorm 0.8292 : L.r. 1.6255e-04
+[2021-06-15 10:20:59] Ep. 1 : Up. 55000 : Sen. 50,700,066 : Cost 2.59690213 * 11,637,048 @ 26,696 after 1,284,763,592 : Time 188.94s : 61591.85 words/s : gNorm 0.6605 : L.r. 1.6181e-04
+[2021-06-15 10:20:59] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.iter55000.npz
+[2021-06-15 10:21:04] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz
+[2021-06-15 10:21:11] Saving Adam parameters
+[2021-06-15 10:21:16] [training] Saving training checkpoint to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz and /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.optimizer.npz
+[2021-06-15 10:21:33] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-cross-entropy.npz
+[2021-06-15 10:21:38] [valid] Ep. 1 : Up. 55000 : cross-entropy : 64.8552 : new best
+[2021-06-15 10:21:39] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-perplexity.npz
+[2021-06-15 10:21:44] [valid] Ep. 1 : Up. 55000 : perplexity : 7.73665 : new best
+[2021-06-15 10:22:01] [valid] Ep. 1 : Up. 55000 : bleu-detok : 21.0964 : stalled 1 times (last best: 21.3571)
+[2021-06-15 10:25:10] Ep. 1 : Up. 55500 : Sen. 51,161,664 : Cost 2.62249565 * 11,644,787 @ 24,864 after 1,296,408,379 : Time 251.18s : 46361.00 words/s : gNorm 1.4515 : L.r. 1.6108e-04
+[2021-06-15 10:28:19] Ep. 1 : Up. 56000 : Sen. 51,626,684 : Cost 2.63412642 * 11,625,699 @ 24,192 after 1,308,034,078 : Time 189.15s : 61464.19 words/s : gNorm 0.8125 : L.r. 1.6036e-04
+[2021-06-15 10:31:28] Ep. 1 : Up. 56500 : Sen. 52,076,774 : Cost 2.57799959 * 11,730,761 @ 28,704 after 1,319,764,839 : Time 189.21s : 61999.23 words/s : gNorm 0.7436 : L.r. 1.5965e-04
+[2021-06-15 10:34:38] Ep. 1 : Up. 57000 : Sen. 52,537,882 : Cost 2.60949540 * 11,579,133 @ 26,680 after 1,331,343,972 : Time 189.58s : 61077.60 words/s : gNorm 1.6531 : L.r. 1.5894e-04
+[2021-06-15 10:37:47] Ep. 1 : Up. 57500 : Sen. 53,000,432 : Cost 2.58477306 * 11,756,555 @ 28,944 after 1,343,100,527 : Time 189.04s : 62190.61 words/s : gNorm 0.7168 : L.r. 1.5825e-04
+[2021-06-15 10:40:57] Ep. 1 : Up. 58000 : Sen. 53,453,277 : Cost 2.59839582 * 11,622,322 @ 23,000 after 1,354,722,849 : Time 189.70s : 61268.04 words/s : gNorm 0.7171 : L.r. 1.5757e-04
+[2021-06-15 10:44:06] Ep. 1 : Up. 58500 : Sen. 53,922,130 : Cost 2.60354614 * 11,703,518 @ 24,960 after 1,366,426,367 : Time 189.03s : 61913.62 words/s : gNorm 0.7079 : L.r. 1.5689e-04
+[2021-06-15 10:47:16] Ep. 1 : Up. 59000 : Sen. 54,379,457 : Cost 2.57246137 * 11,696,423 @ 16,224 after 1,378,122,790 : Time 189.93s : 61582.07 words/s : gNorm 0.6988 : L.r. 1.5623e-04
+[2021-06-15 10:50:25] Ep. 1 : Up. 59500 : Sen. 54,836,713 : Cost 2.63104606 * 11,727,923 @ 30,744 after 1,389,850,713 : Time 189.46s : 61902.84 words/s : gNorm 0.8979 : L.r. 1.5557e-04
+[2021-06-15 10:53:34] Ep. 1 : Up. 60000 : Sen. 55,306,955 : Cost 2.58246660 * 11,617,085 @ 23,000 after 1,401,467,798 : Time 189.18s : 61407.10 words/s : gNorm 0.7264 : L.r. 1.5492e-04
+[2021-06-15 10:53:34] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.iter60000.npz
+[2021-06-15 10:53:39] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz
+[2021-06-15 10:53:46] Saving Adam parameters
+[2021-06-15 10:53:51] [training] Saving training checkpoint to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz and /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.optimizer.npz
+[2021-06-15 10:54:09] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-cross-entropy.npz
+[2021-06-15 10:54:14] [valid] Ep. 1 : Up. 60000 : cross-entropy : 64.5635 : new best
+[2021-06-15 10:54:15] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-perplexity.npz
+[2021-06-15 10:54:20] [valid] Ep. 1 : Up. 60000 : perplexity : 7.66579 : new best
+[2021-06-15 10:54:31] [valid] Ep. 1 : Up. 60000 : bleu-detok : 21.0752 : stalled 2 times (last best: 21.3571)
+[2021-06-15 10:57:40] Ep. 1 : Up. 60500 : Sen. 55,760,410 : Cost 2.60257077 * 11,583,829 @ 32,398 after 1,413,051,627 : Time 245.78s : 47131.55 words/s : gNorm 0.7393 : L.r. 1.5428e-04
+[2021-06-15 11:00:49] Ep. 1 : Up. 61000 : Sen. 56,229,176 : Cost 2.59100556 * 11,648,051 @ 21,216 after 1,424,699,678 : Time 188.74s : 61714.08 words/s : gNorm 0.7924 : L.r. 1.5364e-04
+[2021-06-15 11:03:59] Ep. 1 : Up. 61500 : Sen. 56,660,705 : Cost 2.57228374 * 11,864,833 @ 13,272 after 1,436,564,511 : Time 189.89s : 62483.61 words/s : gNorm 1.8150 : L.r. 1.5302e-04
+[2021-06-15 11:07:07] Ep. 1 : Up. 62000 : Sen. 57,150,537 : Cost 2.61889219 * 11,567,234 @ 15,792 after 1,448,131,745 : Time 188.93s : 61225.73 words/s : gNorm 1.1019 : L.r. 1.5240e-04
+[2021-06-15 11:10:17] Ep. 1 : Up. 62500 : Sen. 57,617,911 : Cost 2.55646372 * 11,504,157 @ 24,864 after 1,459,635,902 : Time 189.32s : 60764.66 words/s : gNorm 0.7251 : L.r. 1.5179e-04
+[2021-06-15 11:13:26] Ep. 1 : Up. 63000 : Sen. 58,065,293 : Cost 2.62543726 * 11,694,797 @ 29,520 after 1,471,330,699 : Time 188.74s : 61962.47 words/s : gNorm 1.0003 : L.r. 1.5119e-04
+[2021-06-15 11:16:35] Ep. 1 : Up. 63500 : Sen. 58,523,632 : Cost 2.60143352 * 11,621,561 @ 12,180 after 1,482,952,260 : Time 189.77s : 61241.43 words/s : gNorm 0.7571 : L.r. 1.5059e-04
+[2021-06-15 11:19:45] Ep. 1 : Up. 64000 : Sen. 58,982,513 : Cost 2.56290865 * 11,763,658 @ 24,192 after 1,494,715,918 : Time 189.33s : 62134.28 words/s : gNorm 0.6671 : L.r. 1.5000e-04
+[2021-06-15 11:22:54] Ep. 1 : Up. 64500 : Sen. 59,440,270 : Cost 2.57651114 * 11,650,289 @ 28,520 after 1,506,366,207 : Time 189.54s : 61465.04 words/s : gNorm 0.8080 : L.r. 1.4942e-04
+[2021-06-15 11:26:03] Ep. 1 : Up. 65000 : Sen. 59,902,881 : Cost 2.58432817 * 11,619,339 @ 15,120 after 1,517,985,546 : Time 188.91s : 61506.09 words/s : gNorm 0.6998 : L.r. 1.4884e-04
+[2021-06-15 11:26:03] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.iter65000.npz
+[2021-06-15 11:26:08] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz
+[2021-06-15 11:26:15] Saving Adam parameters
+[2021-06-15 11:26:20] [training] Saving training checkpoint to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz and /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.optimizer.npz
+[2021-06-15 11:26:38] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-cross-entropy.npz
+[2021-06-15 11:26:43] [valid] Ep. 1 : Up. 65000 : cross-entropy : 64.3507 : new best
+[2021-06-15 11:26:44] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-perplexity.npz
+[2021-06-15 11:26:49] [valid] Ep. 1 : Up. 65000 : perplexity : 7.61449 : new best
+[2021-06-15 11:27:02] [valid] Ep. 1 : Up. 65000 : bleu-detok : 21.1448 : stalled 3 times (last best: 21.3571)
+[2021-06-15 11:30:12] Ep. 1 : Up. 65500 : Sen. 60,348,350 : Cost 2.59413314 * 11,877,451 @ 21,502 after 1,529,862,997 : Time 249.11s : 47680.04 words/s : gNorm 0.7097 : L.r. 1.4827e-04
+[2021-06-15 11:33:21] Ep. 1 : Up. 66000 : Sen. 60,822,863 : Cost 2.60870695 * 11,559,071 @ 20,856 after 1,541,422,068 : Time 188.73s : 61246.23 words/s : gNorm 1.0760 : L.r. 1.4771e-04
+[2021-06-15 11:36:30] Ep. 1 : Up. 66500 : Sen. 61,282,617 : Cost 2.52656531 * 11,478,252 @ 15,640 after 1,552,900,320 : Time 188.87s : 60772.29 words/s : gNorm 0.8213 : L.r. 1.4715e-04
+[2021-06-15 11:39:40] Ep. 1 : Up. 67000 : Sen. 61,741,563 : Cost 2.60397291 * 11,851,329 @ 28,944 after 1,564,751,649 : Time 189.82s : 62433.36 words/s : gNorm 0.7254 : L.r. 1.4660e-04
+[2021-06-15 11:42:49] Ep. 1 : Up. 67500 : Sen. 62,207,572 : Cost 2.54331946 * 11,751,495 @ 26,048 after 1,576,503,144 : Time 189.64s : 61966.76 words/s : gNorm 0.8667 : L.r. 1.4606e-04
+[2021-06-15 11:45:58] Ep. 1 : Up. 68000 : Sen. 62,666,580 : Cost 2.56165791 * 11,487,196 @ 26,680 after 1,587,990,340 : Time 188.71s : 60872.24 words/s : gNorm 0.9910 : L.r. 1.4552e-04
+[2021-06-15 11:49:07] Ep. 1 : Up. 68500 : Sen. 63,127,628 : Cost 2.60562110 * 11,562,191 @ 26,352 after 1,599,552,531 : Time 188.86s : 61222.53 words/s : gNorm 0.7787 : L.r. 1.4499e-04
+[2021-06-15 11:52:17] Ep. 1 : Up. 69000 : Sen. 63,603,964 : Cost 2.60843396 * 11,714,367 @ 26,208 after 1,611,266,898 : Time 189.94s : 61674.01 words/s : gNorm 0.8760 : L.r. 1.4446e-04
+[2021-06-15 11:55:26] Ep. 1 : Up. 69500 : Sen. 64,039,512 : Cost 2.54941297 * 11,854,723 @ 20,664 after 1,623,121,621 : Time 189.53s : 62547.75 words/s : gNorm 0.6229 : L.r. 1.4394e-04
+[2021-06-15 11:58:36] Ep. 1 : Up. 70000 : Sen. 64,511,926 : Cost 2.59948206 * 11,574,568 @ 29,520 after 1,634,696,189 : Time 189.47s : 61088.42 words/s : gNorm 0.9546 : L.r. 1.4343e-04
+[2021-06-15 11:58:36] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.iter70000.npz
+[2021-06-15 11:58:41] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz
+[2021-06-15 11:58:48] Saving Adam parameters
+[2021-06-15 11:58:52] [training] Saving training checkpoint to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz and /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.optimizer.npz
+[2021-06-15 11:59:10] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-cross-entropy.npz
+[2021-06-15 11:59:16] [valid] Ep. 1 : Up. 70000 : cross-entropy : 64.1968 : new best
+[2021-06-15 11:59:16] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-perplexity.npz
+[2021-06-15 11:59:22] [valid] Ep. 1 : Up. 70000 : perplexity : 7.57763 : new best
+[2021-06-15 11:59:35] [valid] Ep. 1 : Up. 70000 : bleu-detok : 21.1046 : stalled 4 times (last best: 21.3571)
+[2021-06-15 12:02:44] Ep. 1 : Up. 70500 : Sen. 64,972,312 : Cost 2.54564500 * 11,741,972 @ 5,849 after 1,646,438,161 : Time 247.93s : 47359.84 words/s : gNorm 0.6964 : L.r. 1.4292e-04
+[2021-06-15 12:05:53] Ep. 1 : Up. 71000 : Sen. 65,426,480 : Cost 2.57067418 * 11,476,224 @ 27,232 after 1,657,914,385 : Time 189.21s : 60654.59 words/s : gNorm 1.8011 : L.r. 1.4241e-04
+[2021-06-15 12:09:02] Ep. 1 : Up. 71500 : Sen. 65,884,444 : Cost 2.57016277 * 11,780,250 @ 28,704 after 1,669,694,635 : Time 189.47s : 62174.86 words/s : gNorm 0.6547 : L.r. 1.4191e-04
+[2021-06-15 12:12:12] Ep. 1 : Up. 72000 : Sen. 66,371,010 : Cost 2.57370996 * 11,713,842 @ 19,320 after 1,681,408,477 : Time 189.79s : 61718.73 words/s : gNorm 0.7650 : L.r. 1.4142e-04
+[2021-06-15 12:15:21] Ep. 1 : Up. 72500 : Sen. 66,830,734 : Cost 2.56067371 * 11,619,394 @ 25,920 after 1,693,027,871 : Time 189.07s : 61456.42 words/s : gNorm 0.7238 : L.r. 1.4093e-04
+[2021-06-15 12:18:31] Ep. 1 : Up. 73000 : Sen. 67,277,476 : Cost 2.58072829 * 11,627,469 @ 27,824 after 1,704,655,340 : Time 189.40s : 61391.44 words/s : gNorm 0.9912 : L.r. 1.4045e-04
+[2021-06-15 12:21:40] Ep. 1 : Up. 73500 : Sen. 67,727,008 : Cost 2.54352117 * 11,712,032 @ 8,280 after 1,716,367,372 : Time 189.38s : 61845.28 words/s : gNorm 1.5261 : L.r. 1.3997e-04
+[2021-06-15 12:24:50] Ep. 1 : Up. 74000 : Sen. 68,178,377 : Cost 2.55492115 * 11,669,578 @ 26,712 after 1,728,036,950 : Time 189.52s : 61574.18 words/s : gNorm 1.4773 : L.r. 1.3950e-04
+[2021-06-15 12:27:59] Ep. 1 : Up. 74500 : Sen. 68,651,952 : Cost 2.55650902 * 11,666,074 @ 28,944 after 1,739,703,024 : Time 189.85s : 61449.24 words/s : gNorm 0.8545 : L.r. 1.3903e-04
+[2021-06-15 12:31:09] Ep. 1 : Up. 75000 : Sen. 69,101,858 : Cost 2.58179760 * 11,819,035 @ 25,406 after 1,751,522,059 : Time 189.49s : 62372.90 words/s : gNorm 0.7035 : L.r. 1.3856e-04
+[2021-06-15 12:31:09] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.iter75000.npz
+[2021-06-15 12:31:14] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz
+[2021-06-15 12:31:21] Saving Adam parameters
+[2021-06-15 12:31:26] [training] Saving training checkpoint to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz and /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.optimizer.npz
+[2021-06-15 12:31:43] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-cross-entropy.npz
+[2021-06-15 12:31:49] [valid] Ep. 1 : Up. 75000 : cross-entropy : 64.0633 : new best
+[2021-06-15 12:31:49] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-perplexity.npz
+[2021-06-15 12:31:55] [valid] Ep. 1 : Up. 75000 : perplexity : 7.54578 : new best
+[2021-06-15 12:32:08] [valid] Ep. 1 : Up. 75000 : bleu-detok : 20.9154 : stalled 5 times (last best: 21.3571)
+[2021-06-15 12:35:17] Ep. 1 : Up. 75500 : Sen. 69,562,908 : Cost 2.58640242 * 11,644,156 @ 29,704 after 1,763,166,215 : Time 247.76s : 46998.20 words/s : gNorm 0.7584 : L.r. 1.3810e-04
+[2021-06-15 12:38:25] Ep. 1 : Up. 76000 : Sen. 70,030,816 : Cost 2.54301858 * 11,611,182 @ 24,480 after 1,774,777,397 : Time 188.78s : 61506.95 words/s : gNorm 0.7069 : L.r. 1.3765e-04
+[2021-06-15 12:41:35] Ep. 1 : Up. 76500 : Sen. 70,492,659 : Cost 2.55884337 * 11,519,083 @ 22,464 after 1,786,296,480 : Time 189.39s : 60822.69 words/s : gNorm 0.6884 : L.r. 1.3720e-04
+[2021-06-15 12:44:44] Ep. 1 : Up. 77000 : Sen. 70,955,865 : Cost 2.57509518 * 11,786,597 @ 27,824 after 1,798,083,077 : Time 189.22s : 62292.00 words/s : gNorm 0.6248 : L.r. 1.3675e-04
+[2021-06-15 12:47:53] Ep. 1 : Up. 77500 : Sen. 71,416,207 : Cost 2.57414651 * 11,590,126 @ 28,800 after 1,809,673,203 : Time 189.17s : 61268.57 words/s : gNorm 1.3254 : L.r. 1.3631e-04
+[2021-06-15 12:51:03] Ep. 1 : Up. 78000 : Sen. 71,877,274 : Cost 2.55062079 * 11,718,880 @ 24,864 after 1,821,392,083 : Time 189.28s : 61912.18 words/s : gNorm 0.6731 : L.r. 1.3587e-04
+[2021-06-15 12:54:12] Ep. 1 : Up. 78500 : Sen. 72,329,963 : Cost 2.55993581 * 11,613,107 @ 22,680 after 1,833,005,190 : Time 189.43s : 61306.08 words/s : gNorm 0.7799 : L.r. 1.3544e-04
+[2021-06-15 12:57:22] Ep. 1 : Up. 79000 : Sen. 72,790,489 : Cost 2.55078411 * 11,750,987 @ 27,824 after 1,844,756,177 : Time 189.69s : 61947.08 words/s : gNorm 0.9193 : L.r. 1.3501e-04
+[2021-06-15 13:00:31] Ep. 1 : Up. 79500 : Sen. 73,260,735 : Cost 2.55480051 * 11,615,662 @ 27,216 after 1,856,371,839 : Time 189.25s : 61377.10 words/s : gNorm 0.7844 : L.r. 1.3459e-04
+[2021-06-15 13:03:40] Ep. 1 : Up. 80000 : Sen. 73,726,775 : Cost 2.56905198 * 11,716,474 @ 27,824 after 1,868,088,313 : Time 189.59s : 61800.53 words/s : gNorm 0.9325 : L.r. 1.3416e-04
+[2021-06-15 13:03:41] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.iter80000.npz
+[2021-06-15 13:03:45] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz
+[2021-06-15 13:03:52] Saving Adam parameters
+[2021-06-15 13:03:57] [training] Saving training checkpoint to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz and /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.optimizer.npz
+[2021-06-15 13:04:14] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-cross-entropy.npz
+[2021-06-15 13:04:20] [valid] Ep. 1 : Up. 80000 : cross-entropy : 64.0134 : new best
+[2021-06-15 13:04:21] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-perplexity.npz
+[2021-06-15 13:04:26] [valid] Ep. 1 : Up. 80000 : perplexity : 7.5339 : new best
+[2021-06-15 13:04:39] [valid] Ep. 1 : Up. 80000 : bleu-detok : 20.577 : stalled 6 times (last best: 21.3571)
+[2021-06-15 13:07:48] Ep. 1 : Up. 80500 : Sen. 74,182,316 : Cost 2.52013826 * 11,654,981 @ 22,464 after 1,879,743,294 : Time 247.32s : 47124.39 words/s : gNorm 0.7323 : L.r. 1.3375e-04
+[2021-06-15 13:10:57] Ep. 1 : Up. 81000 : Sen. 74,648,023 : Cost 2.58835912 * 11,607,908 @ 19,968 after 1,891,351,202 : Time 189.24s : 61339.55 words/s : gNorm 0.7190 : L.r. 1.3333e-04
+[2021-06-15 13:14:06] Ep. 1 : Up. 81500 : Sen. 75,103,542 : Cost 2.52700973 * 11,715,683 @ 20,856 after 1,903,066,885 : Time 189.12s : 61950.00 words/s : gNorm 0.7671 : L.r. 1.3292e-04
+[2021-06-15 13:17:16] Ep. 1 : Up. 82000 : Sen. 75,571,388 : Cost 2.54766273 * 11,487,272 @ 17,480 after 1,914,554,157 : Time 189.38s : 60657.72 words/s : gNorm 1.0695 : L.r. 1.3252e-04
+[2021-06-15 13:20:25] Ep. 1 : Up. 82500 : Sen. 76,016,624 : Cost 2.54744649 * 11,849,733 @ 23,712 after 1,926,403,890 : Time 189.47s : 62542.02 words/s : gNorm 0.8107 : L.r. 1.3212e-04
+[2021-06-15 13:23:36] Ep. 1 : Up. 83000 : Sen. 76,471,636 : Cost 2.52908945 * 11,849,146 @ 27,216 after 1,938,253,036 : Time 190.51s : 62196.09 words/s : gNorm 0.7384 : L.r. 1.3172e-04
+[2021-06-15 13:26:44] Ep. 1 : Up. 83500 : Sen. 76,937,059 : Cost 2.55903816 * 11,627,262 @ 13,272 after 1,949,880,298 : Time 188.94s : 61540.78 words/s : gNorm 0.8856 : L.r. 1.3132e-04
+[2021-06-15 13:29:53] Ep. 1 : Up. 84000 : Sen. 77,391,621 : Cost 2.54619431 * 11,504,226 @ 29,600 after 1,961,384,524 : Time 188.99s : 60870.68 words/s : gNorm 0.6899 : L.r. 1.3093e-04
+[2021-06-15 13:33:03] Ep. 1 : Up. 84500 : Sen. 77,862,734 : Cost 2.55456662 * 11,749,063 @ 32,830 after 1,973,133,587 : Time 189.53s : 61990.04 words/s : gNorm 0.8737 : L.r. 1.3054e-04
+[2021-06-15 13:36:13] Ep. 1 : Up. 85000 : Sen. 78,318,794 : Cost 2.57227373 * 11,993,345 @ 23,088 after 1,985,126,932 : Time 190.49s : 62959.93 words/s : gNorm 0.7580 : L.r. 1.3016e-04
+[2021-06-15 13:36:14] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.iter85000.npz
+[2021-06-15 13:36:19] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz
+[2021-06-15 13:36:26] Saving Adam parameters
+[2021-06-15 13:36:31] [training] Saving training checkpoint to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz and /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.optimizer.npz
+[2021-06-15 13:36:48] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-cross-entropy.npz
+[2021-06-15 13:36:54] [valid] Ep. 1 : Up. 85000 : cross-entropy : 63.9392 : new best
+[2021-06-15 13:36:54] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-perplexity.npz
+[2021-06-15 13:37:00] [valid] Ep. 1 : Up. 85000 : perplexity : 7.5163 : new best
+[2021-06-15 13:37:14] [valid] Ep. 1 : Up. 85000 : bleu-detok : 20.6862 : stalled 7 times (last best: 21.3571)
+[2021-06-15 13:40:22] Ep. 1 : Up. 85500 : Sen. 78,784,941 : Cost 2.51481748 * 11,609,239 @ 22,464 after 1,996,736,171 : Time 248.98s : 46626.76 words/s : gNorm 1.6217 : L.r. 1.2978e-04
+[2021-06-15 13:43:31] Ep. 1 : Up. 86000 : Sen. 79,257,542 : Cost 2.57686186 * 11,558,401 @ 22,464 after 2,008,294,572 : Time 188.86s : 61201.59 words/s : gNorm 0.7487 : L.r. 1.2940e-04
+[2021-06-15 13:46:41] Ep. 1 : Up. 86500 : Sen. 79,701,566 : Cost 2.50592017 * 11,588,828 @ 1,008 after 2,019,883,400 : Time 189.22s : 61246.87 words/s : gNorm 1.1217 : L.r. 1.2902e-04
+[2021-06-15 13:49:49] Ep. 1 : Up. 87000 : Sen. 80,176,240 : Cost 2.58105302 * 11,519,172 @ 20,998 after 2,031,402,572 : Time 188.75s : 61029.73 words/s : gNorm 1.0701 : L.r. 1.2865e-04
+[2021-06-15 13:52:59] Ep. 1 : Up. 87500 : Sen. 80,637,511 : Cost 2.55734706 * 11,803,824 @ 27,824 after 2,043,206,396 : Time 189.89s : 62162.11 words/s : gNorm 0.7290 : L.r. 1.2829e-04
+[2021-06-15 13:56:09] Ep. 1 : Up. 88000 : Sen. 81,092,961 : Cost 2.51295996 * 11,739,300 @ 20,880 after 2,054,945,696 : Time 189.41s : 61978.57 words/s : gNorm 1.1481 : L.r. 1.2792e-04
+[2021-06-15 13:59:18] Ep. 1 : Up. 88500 : Sen. 81,564,864 : Cost 2.52866673 * 11,512,568 @ 23,920 after 2,066,458,264 : Time 189.67s : 60697.72 words/s : gNorm 0.7578 : L.r. 1.2756e-04
+[2021-06-15 14:02:28] Ep. 1 : Up. 89000 : Sen. 82,010,652 : Cost 2.54685974 * 11,905,032 @ 23,712 after 2,078,363,296 : Time 189.76s : 62738.35 words/s : gNorm 0.7331 : L.r. 1.2720e-04
+[2021-06-15 14:05:38] Ep. 1 : Up. 89500 : Sen. 82,465,810 : Cost 2.53274322 * 11,622,791 @ 27,824 after 2,089,986,087 : Time 190.07s : 61150.74 words/s : gNorm 0.8266 : L.r. 1.2684e-04
+[2021-06-15 14:08:47] Ep. 1 : Up. 90000 : Sen. 82,939,578 : Cost 2.54783010 * 11,640,615 @ 28,944 after 2,101,626,702 : Time 188.85s : 61639.66 words/s : gNorm 1.3498 : L.r. 1.2649e-04
+[2021-06-15 14:08:47] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.iter90000.npz
+[2021-06-15 14:08:52] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz
+[2021-06-15 14:08:59] Saving Adam parameters
+[2021-06-15 14:09:04] [training] Saving training checkpoint to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz and /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.optimizer.npz
+[2021-06-15 14:09:22] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-cross-entropy.npz
+[2021-06-15 14:09:27] [valid] Ep. 1 : Up. 90000 : cross-entropy : 63.913 : new best
+[2021-06-15 14:09:28] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-perplexity.npz
+[2021-06-15 14:09:33] [valid] Ep. 1 : Up. 90000 : perplexity : 7.51009 : new best
+[2021-06-15 14:09:45] [valid] Ep. 1 : Up. 90000 : bleu-detok : 20.5783 : stalled 8 times (last best: 21.3571)
+[2021-06-15 14:12:55] Ep. 1 : Up. 90500 : Sen. 83,391,643 : Cost 2.51395369 * 11,775,138 @ 27,232 after 2,113,401,840 : Time 248.13s : 47455.52 words/s : gNorm 0.8256 : L.r. 1.2614e-04
+[2021-06-15 14:16:04] Ep. 1 : Up. 91000 : Sen. 83,863,299 : Cost 2.56035304 * 11,557,343 @ 25,920 after 2,124,959,183 : Time 188.68s : 61252.18 words/s : gNorm 0.9087 : L.r. 1.2579e-04
+[2021-06-15 14:19:14] Ep. 1 : Up. 91500 : Sen. 84,315,950 : Cost 2.55251527 * 11,785,275 @ 25,944 after 2,136,744,458 : Time 190.07s : 62004.72 words/s : gNorm 0.8394 : L.r. 1.2545e-04
+[2021-06-15 14:22:23] Ep. 1 : Up. 92000 : Sen. 84,777,250 : Cost 2.54213977 * 11,481,395 @ 27,456 after 2,148,225,853 : Time 188.99s : 60751.49 words/s : gNorm 1.1606 : L.r. 1.2511e-04
+[2021-06-15 14:25:33] Ep. 1 : Up. 92500 : Sen. 85,220,937 : Cost 2.52621531 * 11,950,536 @ 13,639 after 2,160,176,389 : Time 190.26s : 62813.23 words/s : gNorm 1.2873 : L.r. 1.2477e-04
+[2021-06-15 14:28:43] Ep. 1 : Up. 93000 : Sen. 85,691,315 : Cost 2.51505899 * 11,659,466 @ 20,240 after 2,171,835,855 : Time 189.69s : 61466.26 words/s : gNorm 0.7977 : L.r. 1.2443e-04
+[2021-06-15 14:31:52] Ep. 1 : Up. 93500 : Sen. 86,158,339 : Cost 2.57176113 * 11,854,921 @ 26,208 after 2,183,690,776 : Time 189.71s : 62488.71 words/s : gNorm 0.7449 : L.r. 1.2410e-04
+[2021-06-15 14:35:02] Ep. 1 : Up. 94000 : Sen. 86,634,920 : Cost 2.52631760 * 11,495,411 @ 11,376 after 2,195,186,187 : Time 189.31s : 60723.89 words/s : gNorm 1.4082 : L.r. 1.2377e-04
+[2021-06-15 14:38:11] Ep. 1 : Up. 94500 : Sen. 87,083,601 : Cost 2.52515292 * 11,652,253 @ 25,568 after 2,206,838,440 : Time 189.11s : 61615.60 words/s : gNorm 0.9318 : L.r. 1.2344e-04
+[2021-06-15 14:41:21] Ep. 1 : Up. 95000 : Sen. 87,548,521 : Cost 2.56186724 * 11,733,002 @ 23,760 after 2,218,571,442 : Time 190.44s : 61609.28 words/s : gNorm 0.9845 : L.r. 1.2312e-04
+[2021-06-15 14:41:21] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.iter95000.npz
+[2021-06-15 14:41:27] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz
+[2021-06-15 14:41:33] Saving Adam parameters
+[2021-06-15 14:41:38] [training] Saving training checkpoint to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz and /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.optimizer.npz
+[2021-06-15 14:41:55] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-cross-entropy.npz
+[2021-06-15 14:42:01] [valid] Ep. 1 : Up. 95000 : cross-entropy : 63.908 : new best
+[2021-06-15 14:42:01] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.best-perplexity.npz
+[2021-06-15 14:42:07] [valid] Ep. 1 : Up. 95000 : perplexity : 7.50891 : new best
+[2021-06-15 14:42:20] [valid] Ep. 1 : Up. 95000 : bleu-detok : 20.8309 : stalled 9 times (last best: 21.3571)
+[2021-06-15 14:45:28] Ep. 1 : Up. 95500 : Sen. 88,006,824 : Cost 2.49022341 * 11,655,756 @ 24,840 after 2,230,227,198 : Time 246.93s : 47203.33 words/s : gNorm 1.4113 : L.r. 1.2279e-04
+[2021-06-15 14:48:38] Ep. 1 : Up. 96000 : Sen. 88,465,504 : Cost 2.57150817 * 11,553,513 @ 27,216 after 2,241,780,711 : Time 189.40s : 61001.05 words/s : gNorm 1.0567 : L.r. 1.2247e-04
+[2021-06-15 14:51:47] Ep. 1 : Up. 96500 : Sen. 88,930,353 : Cost 2.51876903 * 11,637,031 @ 20,856 after 2,253,417,742 : Time 188.89s : 61607.26 words/s : gNorm 0.9773 : L.r. 1.2216e-04
+[2021-06-15 14:54:57] Ep. 1 : Up. 97000 : Sen. 89,395,797 : Cost 2.51162410 * 11,807,896 @ 23,920 after 2,265,225,638 : Time 190.01s : 62144.00 words/s : gNorm 0.9025 : L.r. 1.2184e-04
+[2021-06-15 14:58:05] Ep. 1 : Up. 97500 : Sen. 89,839,845 : Cost 2.51371741 * 11,488,828 @ 26,208 after 2,276,714,466 : Time 188.41s : 60976.83 words/s : gNorm 0.6978 : L.r. 1.2153e-04
+[2021-06-15 15:01:15] Ep. 1 : Up. 98000 : Sen. 90,307,942 : Cost 2.51898789 * 11,883,865 @ 27,448 after 2,288,598,331 : Time 190.44s : 62401.11 words/s : gNorm 0.6995 : L.r. 1.2122e-04
+[2021-06-15 15:04:25] Ep. 1 : Up. 98500 : Sen. 90,776,116 : Cost 2.52172327 * 11,686,347 @ 24,960 after 2,300,284,678 : Time 189.48s : 61675.33 words/s : gNorm 0.8373 : L.r. 1.2091e-04
+[2021-06-15 15:07:34] Ep. 1 : Up. 99000 : Sen. 91,220,629 : Cost 2.50498319 * 11,606,595 @ 11,592 after 2,311,891,273 : Time 188.75s : 61491.63 words/s : gNorm 0.7627 : L.r. 1.2060e-04
+[2021-06-15 15:10:43] Ep. 1 : Up. 99500 : Sen. 91,699,025 : Cost 2.54423547 * 11,550,649 @ 30,336 after 2,323,441,922 : Time 189.39s : 60988.43 words/s : gNorm 1.2897 : L.r. 1.2030e-04
+[2021-06-15 15:13:53] Ep. 1 : Up. 100000 : Sen. 92,129,969 : Cost 2.54022765 * 11,743,480 @ 25,200 after 2,335,185,402 : Time 189.59s : 61940.43 words/s : gNorm 0.7760 : L.r. 1.2000e-04
+[2021-06-15 15:13:53] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.iter100000.npz
+[2021-06-15 15:13:58] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz
+[2021-06-15 15:14:05] Saving Adam parameters
+[2021-06-15 15:14:10] [training] Saving training checkpoint to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz and /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.optimizer.npz
+[2021-06-15 15:14:27] [valid] Ep. 1 : Up. 100000 : cross-entropy : 63.9431 : stalled 1 times (last best: 63.908)
+[2021-06-15 15:14:28] [valid] Ep. 1 : Up. 100000 : perplexity : 7.51721 : stalled 1 times (last best: 7.50891)
+[2021-06-15 15:14:44] [valid] Ep. 1 : Up. 100000 : bleu-detok : 20.8001 : stalled 10 times (last best: 21.3571)
+[2021-06-15 15:17:53] Ep. 1 : Up. 100500 : Sen. 92,583,810 : Cost 2.52674174 * 11,592,275 @ 11,376 after 2,346,777,677 : Time 240.51s : 48198.77 words/s : gNorm 1.7322 : L.r. 1.1970e-04
+[2021-06-15 15:21:02] Ep. 1 : Up. 101000 : Sen. 93,064,247 : Cost 2.52535081 * 11,689,765 @ 26,712 after 2,358,467,442 : Time 188.70s : 61949.09 words/s : gNorm 0.8302 : L.r. 1.1940e-04
+[2021-06-15 15:24:11] Ep. 1 : Up. 101500 : Sen. 93,523,513 : Cost 2.57338953 * 11,690,198 @ 29,440 after 2,370,157,640 : Time 188.76s : 61932.81 words/s : gNorm 0.9549 : L.r. 1.1911e-04
+[2021-06-15 15:27:13] Seen 93,973,053 samples
+[2021-06-15 15:27:13] Starting data epoch 2 in logical epoch 2
+[2021-06-15 15:27:13] [data] Shuffling data
+[2021-06-15 15:28:02] [data] Done reading 96,302,721 sentences
+[2021-06-15 15:37:43] [data] Done shuffling 96,302,721 sentences to temp files
+[2021-06-15 15:40:22] Ep. 2 : Up. 102000 : Sen. 19,536 : Cost 2.49306726 * 11,652,858 @ 13,272 after 2,381,810,498 : Time 971.44s : 11995.39 words/s : gNorm 0.8611 : L.r. 1.1882e-04
+[2021-06-15 15:43:32] Ep. 2 : Up. 102500 : Sen. 478,096 : Cost 2.49889708 * 11,720,296 @ 26,208 after 2,393,530,794 : Time 189.97s : 61694.90 words/s : gNorm 0.8962 : L.r. 1.1853e-04
+[2021-06-15 15:46:40] Ep. 2 : Up. 103000 : Sen. 937,351 : Cost 2.54064894 * 11,569,384 @ 23,712 after 2,405,100,178 : Time 187.94s : 61560.44 words/s : gNorm 1.2814 : L.r. 1.1824e-04
+[2021-06-15 15:49:50] Ep. 2 : Up. 103500 : Sen. 1,397,607 : Cost 2.48532271 * 11,888,674 @ 21,160 after 2,416,988,852 : Time 190.53s : 62398.36 words/s : gNorm 0.7207 : L.r. 1.1795e-04
+[2021-06-15 15:52:59] Ep. 2 : Up. 104000 : Sen. 1,862,477 : Cost 2.56031752 * 11,563,123 @ 26,680 after 2,428,551,975 : Time 188.68s : 61285.20 words/s : gNorm 0.7824 : L.r. 1.1767e-04
+[2021-06-15 15:56:09] Ep. 2 : Up. 104500 : Sen. 2,319,612 : Cost 2.51023316 * 11,708,826 @ 26,680 after 2,440,260,801 : Time 189.58s : 61762.71 words/s : gNorm 0.9678 : L.r. 1.1739e-04
+[2021-06-15 15:59:18] Ep. 2 : Up. 105000 : Sen. 2,778,101 : Cost 2.52428055 * 11,686,699 @ 13,564 after 2,451,947,500 : Time 189.24s : 61757.08 words/s : gNorm 0.7807 : L.r. 1.1711e-04
+[2021-06-15 15:59:18] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.iter105000.npz
+[2021-06-15 15:59:23] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz
+[2021-06-15 15:59:30] Saving Adam parameters
+[2021-06-15 15:59:35] [training] Saving training checkpoint to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz and /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.optimizer.npz
+[2021-06-15 15:59:53] [valid] Ep. 2 : Up. 105000 : cross-entropy : 64.0089 : stalled 2 times (last best: 63.908)
+[2021-06-15 15:59:54] [valid] Ep. 2 : Up. 105000 : perplexity : 7.53284 : stalled 2 times (last best: 7.50891)
+[2021-06-15 16:00:07] [valid] Ep. 2 : Up. 105000 : bleu-detok : 20.668 : stalled 11 times (last best: 21.3571)
+[2021-06-15 16:03:16] Ep. 2 : Up. 105500 : Sen. 3,246,306 : Cost 2.51971245 * 11,639,750 @ 23,000 after 2,463,587,250 : Time 238.11s : 48884.42 words/s : gNorm 0.8283 : L.r. 1.1683e-04
+[2021-06-15 16:06:25] Ep. 2 : Up. 106000 : Sen. 3,696,852 : Cost 2.54056168 * 11,659,144 @ 31,104 after 2,475,246,394 : Time 189.20s : 61623.66 words/s : gNorm 1.0256 : L.r. 1.1655e-04
+[2021-06-15 16:09:34] Ep. 2 : Up. 106500 : Sen. 4,168,046 : Cost 2.51271677 * 11,492,908 @ 23,680 after 2,486,739,302 : Time 188.71s : 60903.02 words/s : gNorm 1.5601 : L.r. 1.1628e-04
+[2021-06-15 16:12:44] Ep. 2 : Up. 107000 : Sen. 4,635,607 : Cost 2.51782489 * 11,838,067 @ 29,736 after 2,498,577,369 : Time 190.28s : 62214.47 words/s : gNorm 0.8015 : L.r. 1.1601e-04
+[2021-06-15 16:15:53] Ep. 2 : Up. 107500 : Sen. 5,091,947 : Cost 2.48937893 * 11,585,207 @ 15,168 after 2,510,162,576 : Time 188.71s : 61392.68 words/s : gNorm 2.0636 : L.r. 1.1574e-04
+[2021-06-15 16:19:04] Ep. 2 : Up. 108000 : Sen. 5,562,654 : Cost 2.52343321 * 11,743,670 @ 20,240 after 2,521,906,246 : Time 190.64s : 61600.08 words/s : gNorm 0.7324 : L.r. 1.1547e-04
+[2021-06-15 16:22:12] Ep. 2 : Up. 108500 : Sen. 6,004,248 : Cost 2.51534510 * 11,732,710 @ 29,703 after 2,533,638,956 : Time 188.63s : 62198.87 words/s : gNorm 1.1941 : L.r. 1.1520e-04
+[2021-06-15 16:25:22] Ep. 2 : Up. 109000 : Sen. 6,442,870 : Cost 2.51454425 * 11,684,190 @ 23,000 after 2,545,323,146 : Time 189.93s : 61517.85 words/s : gNorm 0.8228 : L.r. 1.1494e-04
+[2021-06-15 16:28:31] Ep. 2 : Up. 109500 : Sen. 6,914,756 : Cost 2.50085616 * 11,713,869 @ 22,464 after 2,557,037,015 : Time 189.09s : 61948.75 words/s : gNorm 0.7982 : L.r. 1.1468e-04
+[2021-06-15 16:31:41] Ep. 2 : Up. 110000 : Sen. 7,391,826 : Cost 2.51276040 * 11,570,981 @ 23,712 after 2,568,607,996 : Time 189.31s : 61122.57 words/s : gNorm 0.8032 : L.r. 1.1442e-04
+[2021-06-15 16:31:41] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.iter110000.npz
+[2021-06-15 16:31:46] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz
+[2021-06-15 16:31:53] Saving Adam parameters
+[2021-06-15 16:31:58] [training] Saving training checkpoint to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz and /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.optimizer.npz
+[2021-06-15 16:32:16] [valid] Ep. 2 : Up. 110000 : cross-entropy : 64.0729 : stalled 3 times (last best: 63.908)
+[2021-06-15 16:32:16] [valid] Ep. 2 : Up. 110000 : perplexity : 7.54807 : stalled 3 times (last best: 7.50891)
+[2021-06-15 16:32:30] [valid] Ep. 2 : Up. 110000 : bleu-detok : 20.6615 : stalled 12 times (last best: 21.3571)
+[2021-06-15 16:35:39] Ep. 2 : Up. 110500 : Sen. 7,850,509 : Cost 2.51527643 * 11,702,218 @ 18,352 after 2,580,310,214 : Time 238.35s : 49097.61 words/s : gNorm 0.8542 : L.r. 1.1416e-04
+[2021-06-15 16:38:48] Ep. 2 : Up. 111000 : Sen. 8,322,425 : Cost 2.53638077 * 11,711,112 @ 5,616 after 2,592,021,326 : Time 189.52s : 61792.94 words/s : gNorm 2.5348 : L.r. 1.1390e-04
+[2021-06-15 16:41:58] Ep. 2 : Up. 111500 : Sen. 8,784,622 : Cost 2.51267910 * 11,686,061 @ 15,392 after 2,603,707,387 : Time 189.23s : 61757.16 words/s : gNorm 0.8997 : L.r. 1.1364e-04
+[2021-06-15 16:45:07] Ep. 2 : Up. 112000 : Sen. 9,233,086 : Cost 2.47743988 * 11,822,487 @ 16,224 after 2,615,529,874 : Time 189.52s : 62379.81 words/s : gNorm 0.7393 : L.r. 1.1339e-04
+[2021-06-15 16:48:16] Ep. 2 : Up. 112500 : Sen. 9,692,597 : Cost 2.51404881 * 11,699,544 @ 30,360 after 2,627,229,418 : Time 189.24s : 61824.68 words/s : gNorm 0.7460 : L.r. 1.1314e-04
+[2021-06-15 16:51:25] Ep. 2 : Up. 113000 : Sen. 10,157,681 : Cost 2.51937461 * 11,498,721 @ 24,480 after 2,638,728,139 : Time 188.33s : 61054.67 words/s : gNorm 1.5555 : L.r. 1.1289e-04
+[2021-06-15 16:54:35] Ep. 2 : Up. 113500 : Sen. 10,616,377 : Cost 2.49898028 * 11,659,469 @ 28,896 after 2,650,387,608 : Time 189.76s : 61444.31 words/s : gNorm 0.7542 : L.r. 1.1264e-04
+[2021-06-15 16:57:43] Ep. 2 : Up. 114000 : Sen. 11,075,799 : Cost 2.53046679 * 11,707,355 @ 3,024 after 2,662,094,963 : Time 188.85s : 61993.69 words/s : gNorm 1.5179 : L.r. 1.1239e-04
+[2021-06-15 17:00:53] Ep. 2 : Up. 114500 : Sen. 11,538,954 : Cost 2.54213166 * 11,538,096 @ 23,184 after 2,673,633,059 : Time 189.32s : 60946.27 words/s : gNorm 1.3566 : L.r. 1.1214e-04
+[2021-06-15 17:04:02] Ep. 2 : Up. 115000 : Sen. 11,997,184 : Cost 2.46890163 * 11,849,596 @ 20,856 after 2,685,482,655 : Time 189.43s : 62553.33 words/s : gNorm 0.7145 : L.r. 1.1190e-04
+[2021-06-15 17:04:02] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.iter115000.npz
+[2021-06-15 17:04:07] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz
+[2021-06-15 17:04:14] Saving Adam parameters
+[2021-06-15 17:04:19] [training] Saving training checkpoint to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz and /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.optimizer.npz
+[2021-06-15 17:04:37] [valid] Ep. 2 : Up. 115000 : cross-entropy : 64.0914 : stalled 4 times (last best: 63.908)
+[2021-06-15 17:04:37] [valid] Ep. 2 : Up. 115000 : perplexity : 7.55246 : stalled 4 times (last best: 7.50891)
+[2021-06-15 17:04:47] [valid] Ep. 2 : Up. 115000 : bleu-detok : 20.3727 : stalled 13 times (last best: 21.3571)
+[2021-06-15 17:07:57] Ep. 2 : Up. 115500 : Sen. 12,467,155 : Cost 2.50652242 * 11,617,818 @ 24,960 after 2,697,100,473 : Time 234.43s : 49557.62 words/s : gNorm 1.1717 : L.r. 1.1166e-04
+[2021-06-15 17:11:05] Ep. 2 : Up. 116000 : Sen. 12,927,289 : Cost 2.52227807 * 11,658,003 @ 13,728 after 2,708,758,476 : Time 188.85s : 61730.01 words/s : gNorm 1.0868 : L.r. 1.1142e-04
+[2021-06-15 17:14:15] Ep. 2 : Up. 116500 : Sen. 13,384,584 : Cost 2.52632856 * 11,728,617 @ 24,960 after 2,720,487,093 : Time 189.72s : 61820.45 words/s : gNorm 0.8675 : L.r. 1.1118e-04
+[2021-06-15 17:17:24] Ep. 2 : Up. 117000 : Sen. 13,840,226 : Cost 2.48728061 * 11,675,555 @ 17,658 after 2,732,162,648 : Time 189.36s : 61656.93 words/s : gNorm 0.9219 : L.r. 1.1094e-04
+[2021-06-15 17:20:34] Ep. 2 : Up. 117500 : Sen. 14,289,884 : Cost 2.47808623 * 11,669,305 @ 26,784 after 2,743,831,953 : Time 189.66s : 61527.05 words/s : gNorm 0.7269 : L.r. 1.1070e-04
+[2021-06-15 17:23:44] Ep. 2 : Up. 118000 : Sen. 14,760,490 : Cost 2.50260925 * 11,620,322 @ 15,456 after 2,755,452,275 : Time 189.42s : 61345.60 words/s : gNorm 1.6343 : L.r. 1.1047e-04
+[2021-06-15 17:26:53] Ep. 2 : Up. 118500 : Sen. 15,224,515 : Cost 2.51594424 * 11,710,318 @ 22,464 after 2,767,162,593 : Time 189.45s : 61810.96 words/s : gNorm 0.9796 : L.r. 1.1024e-04
+[2021-06-15 17:30:03] Ep. 2 : Up. 119000 : Sen. 15,677,008 : Cost 2.49638605 * 11,783,931 @ 31,280 after 2,778,946,524 : Time 190.01s : 62016.58 words/s : gNorm 0.8330 : L.r. 1.1000e-04
+[2021-06-15 17:33:12] Ep. 2 : Up. 119500 : Sen. 16,146,345 : Cost 2.52239585 * 11,600,269 @ 16,813 after 2,790,546,793 : Time 188.90s : 61409.38 words/s : gNorm 0.7935 : L.r. 1.0977e-04
+[2021-06-15 17:36:22] Ep. 2 : Up. 120000 : Sen. 16,601,537 : Cost 2.50789475 * 11,669,243 @ 15,416 after 2,802,216,036 : Time 189.84s : 61470.37 words/s : gNorm 1.0040 : L.r. 1.0954e-04
+[2021-06-15 17:36:22] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.iter120000.npz
+[2021-06-15 17:36:27] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz
+[2021-06-15 17:36:34] Saving Adam parameters
+[2021-06-15 17:36:38] [training] Saving training checkpoint to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz and /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.optimizer.npz
+[2021-06-15 17:36:56] [valid] Ep. 2 : Up. 120000 : cross-entropy : 64.0979 : stalled 5 times (last best: 63.908)
+[2021-06-15 17:36:57] [valid] Ep. 2 : Up. 120000 : perplexity : 7.55401 : stalled 5 times (last best: 7.50891)
+[2021-06-15 17:37:07] [valid] Ep. 2 : Up. 120000 : bleu-detok : 20.2893 : stalled 14 times (last best: 21.3571)
+[2021-06-15 17:40:15] Ep. 2 : Up. 120500 : Sen. 17,058,598 : Cost 2.48157263 * 11,645,158 @ 19,320 after 2,813,861,194 : Time 233.47s : 49877.80 words/s : gNorm 0.9139 : L.r. 1.0932e-04
+[2021-06-15 17:43:25] Ep. 2 : Up. 121000 : Sen. 17,528,292 : Cost 2.52105260 * 11,628,711 @ 23,040 after 2,825,489,905 : Time 189.72s : 61293.06 words/s : gNorm 1.1105 : L.r. 1.0909e-04
+[2021-06-15 17:46:34] Ep. 2 : Up. 121500 : Sen. 17,980,565 : Cost 2.49211574 * 11,714,408 @ 24,648 after 2,837,204,313 : Time 188.66s : 62091.75 words/s : gNorm 0.7078 : L.r. 1.0887e-04
+[2021-06-15 17:49:44] Ep. 2 : Up. 122000 : Sen. 18,433,497 : Cost 2.49451232 * 11,868,915 @ 22,464 after 2,849,073,228 : Time 190.35s : 62354.53 words/s : gNorm 0.8578 : L.r. 1.0864e-04
+[2021-06-15 17:52:53] Ep. 2 : Up. 122500 : Sen. 18,912,742 : Cost 2.52530646 * 11,494,519 @ 29,600 after 2,860,567,747 : Time 188.57s : 60955.01 words/s : gNorm 0.8536 : L.r. 1.0842e-04
+[2021-06-15 17:56:02] Ep. 2 : Up. 123000 : Sen. 19,361,094 : Cost 2.49322748 * 11,641,699 @ 25,456 after 2,872,209,446 : Time 189.35s : 61480.92 words/s : gNorm 0.8671 : L.r. 1.0820e-04
+[2021-06-15 17:59:11] Ep. 2 : Up. 123500 : Sen. 19,828,728 : Cost 2.50808644 * 11,665,288 @ 24,064 after 2,883,874,734 : Time 188.99s : 61723.00 words/s : gNorm 0.8948 : L.r. 1.0798e-04
+[2021-06-15 18:02:20] Ep. 2 : Up. 124000 : Sen. 20,273,861 : Cost 2.48505592 * 11,686,864 @ 18,720 after 2,895,561,598 : Time 189.43s : 61695.72 words/s : gNorm 0.7895 : L.r. 1.0776e-04
+[2021-06-15 18:05:30] Ep. 2 : Up. 124500 : Sen. 20,743,744 : Cost 2.50924969 * 11,732,564 @ 23,184 after 2,907,294,162 : Time 189.65s : 61864.12 words/s : gNorm 1.0965 : L.r. 1.0755e-04
+[2021-06-15 18:08:39] Ep. 2 : Up. 125000 : Sen. 21,212,210 : Cost 2.47710800 * 11,724,429 @ 28,512 after 2,919,018,591 : Time 189.36s : 61916.04 words/s : gNorm 0.8404 : L.r. 1.0733e-04
+[2021-06-15 18:08:39] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.iter125000.npz
+[2021-06-15 18:08:44] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz
+[2021-06-15 18:08:51] Saving Adam parameters
+[2021-06-15 18:08:56] [training] Saving training checkpoint to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz and /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.optimizer.npz
+[2021-06-15 18:09:13] [valid] Ep. 2 : Up. 125000 : cross-entropy : 64.1294 : stalled 6 times (last best: 63.908)
+[2021-06-15 18:09:14] [valid] Ep. 2 : Up. 125000 : perplexity : 7.56153 : stalled 6 times (last best: 7.50891)
+[2021-06-15 18:09:24] [valid] Ep. 2 : Up. 125000 : bleu-detok : 20.207 : stalled 15 times (last best: 21.3571)
+[2021-06-15 18:12:33] Ep. 2 : Up. 125500 : Sen. 21,679,352 : Cost 2.52325273 * 11,569,559 @ 9,480 after 2,930,588,150 : Time 233.88s : 49467.87 words/s : gNorm 0.8993 : L.r. 1.0712e-04
+[2021-06-15 18:15:42] Ep. 2 : Up. 126000 : Sen. 22,135,552 : Cost 2.50940537 * 11,657,799 @ 26,320 after 2,942,245,949 : Time 188.58s : 61817.77 words/s : gNorm 1.2133 : L.r. 1.0690e-04
+[2021-06-15 18:18:52] Ep. 2 : Up. 126500 : Sen. 22,606,394 : Cost 2.47945023 * 11,713,170 @ 34,040 after 2,953,959,119 : Time 190.39s : 61523.01 words/s : gNorm 0.8473 : L.r. 1.0669e-04
+[2021-06-15 18:22:01] Ep. 2 : Up. 127000 : Sen. 23,046,889 : Cost 2.50215244 * 11,570,998 @ 30,240 after 2,965,530,117 : Time 188.52s : 61378.36 words/s : gNorm 0.9518 : L.r. 1.0648e-04
+[2021-06-15 18:25:11] Ep. 2 : Up. 127500 : Sen. 23,518,740 : Cost 2.50889349 * 11,686,879 @ 30,192 after 2,977,216,996 : Time 190.17s : 61455.79 words/s : gNorm 1.1191 : L.r. 1.0627e-04
+[2021-06-15 18:28:20] Ep. 2 : Up. 128000 : Sen. 23,970,658 : Cost 2.48756766 * 11,818,673 @ 25,760 after 2,989,035,669 : Time 189.22s : 62460.88 words/s : gNorm 0.8126 : L.r. 1.0607e-04
+[2021-06-15 18:31:30] Ep. 2 : Up. 128500 : Sen. 24,423,361 : Cost 2.48593473 * 11,728,864 @ 28,704 after 3,000,764,533 : Time 190.01s : 61728.88 words/s : gNorm 0.8243 : L.r. 1.0586e-04
+[2021-06-15 18:34:39] Ep. 2 : Up. 129000 : Sen. 24,903,635 : Cost 2.50000525 * 11,590,653 @ 27,360 after 3,012,355,186 : Time 188.82s : 61383.61 words/s : gNorm 0.7960 : L.r. 1.0565e-04
+[2021-06-15 18:37:49] Ep. 2 : Up. 129500 : Sen. 25,381,893 : Cost 2.48728752 * 11,624,474 @ 30,240 after 3,023,979,660 : Time 189.72s : 61271.98 words/s : gNorm 1.7196 : L.r. 1.0545e-04
+[2021-06-15 18:40:58] Ep. 2 : Up. 130000 : Sen. 25,820,192 : Cost 2.51159000 * 11,811,014 @ 21,335 after 3,035,790,674 : Time 189.74s : 62247.10 words/s : gNorm 1.0233 : L.r. 1.0525e-04
+[2021-06-15 18:40:58] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.iter130000.npz
+[2021-06-15 18:41:04] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz
+[2021-06-15 18:41:11] Saving Adam parameters
+[2021-06-15 18:41:15] [training] Saving training checkpoint to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz and /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.optimizer.npz
+[2021-06-15 18:41:33] [valid] Ep. 2 : Up. 130000 : cross-entropy : 64.1829 : stalled 7 times (last best: 63.908)
+[2021-06-15 18:41:34] [valid] Ep. 2 : Up. 130000 : perplexity : 7.57431 : stalled 7 times (last best: 7.50891)
+[2021-06-15 18:41:46] [valid] Ep. 2 : Up. 130000 : bleu-detok : 20.1747 : stalled 16 times (last best: 21.3571)
+[2021-06-15 18:44:56] Ep. 2 : Up. 130500 : Sen. 26,277,870 : Cost 2.50061941 * 11,824,498 @ 28,520 after 3,047,615,172 : Time 237.40s : 49807.77 words/s : gNorm 0.7050 : L.r. 1.0505e-04
+[2021-06-15 18:48:05] Ep. 2 : Up. 131000 : Sen. 26,742,342 : Cost 2.49370241 * 11,585,008 @ 28,512 after 3,059,200,180 : Time 189.22s : 61225.79 words/s : gNorm 1.1270 : L.r. 1.0484e-04
+[2021-06-15 18:51:14] Ep. 2 : Up. 131500 : Sen. 27,215,463 : Cost 2.48181438 * 11,673,881 @ 29,008 after 3,070,874,061 : Time 189.37s : 61645.02 words/s : gNorm 1.5551 : L.r. 1.0464e-04
+[2021-06-15 18:54:24] Ep. 2 : Up. 132000 : Sen. 27,669,779 : Cost 2.47438812 * 11,755,123 @ 19,968 after 3,082,629,184 : Time 189.94s : 61889.90 words/s : gNorm 1.0977 : L.r. 1.0445e-04
+[2021-06-15 18:57:33] Ep. 2 : Up. 132500 : Sen. 28,119,090 : Cost 2.50693154 * 11,684,817 @ 12,840 after 3,094,314,001 : Time 188.74s : 61910.91 words/s : gNorm 0.9064 : L.r. 1.0425e-04
+[2021-06-15 19:00:43] Ep. 2 : Up. 133000 : Sen. 28,578,765 : Cost 2.49693012 * 11,759,214 @ 26,640 after 3,106,073,215 : Time 189.54s : 62041.86 words/s : gNorm 0.9113 : L.r. 1.0405e-04
+[2021-06-15 19:03:51] Ep. 2 : Up. 133500 : Sen. 29,038,159 : Cost 2.48446512 * 11,549,180 @ 21,160 after 3,117,622,395 : Time 188.69s : 61206.98 words/s : gNorm 0.7708 : L.r. 1.0386e-04
+[2021-06-15 19:07:01] Ep. 2 : Up. 134000 : Sen. 29,492,536 : Cost 2.46629953 * 11,751,710 @ 27,360 after 3,129,374,105 : Time 190.15s : 61803.16 words/s : gNorm 2.3580 : L.r. 1.0366e-04
+[2021-06-15 19:10:10] Ep. 2 : Up. 134500 : Sen. 29,968,450 : Cost 2.51595283 * 11,514,586 @ 18,944 after 3,140,888,691 : Time 188.20s : 61184.03 words/s : gNorm 1.8621 : L.r. 1.0347e-04
+[2021-06-15 19:13:20] Ep. 2 : Up. 135000 : Sen. 30,421,660 : Cost 2.46226525 * 11,721,947 @ 18,720 after 3,152,610,638 : Time 190.21s : 61626.97 words/s : gNorm 0.8431 : L.r. 1.0328e-04
+[2021-06-15 19:13:20] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.iter135000.npz
+[2021-06-15 19:13:25] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz
+[2021-06-15 19:13:32] Saving Adam parameters
+[2021-06-15 19:13:37] [training] Saving training checkpoint to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz and /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.optimizer.npz
+[2021-06-15 19:13:54] [valid] Ep. 2 : Up. 135000 : cross-entropy : 64.2421 : stalled 8 times (last best: 63.908)
+[2021-06-15 19:13:55] [valid] Ep. 2 : Up. 135000 : perplexity : 7.58846 : stalled 8 times (last best: 7.50891)
+[2021-06-15 19:14:08] [valid] Ep. 2 : Up. 135000 : bleu-detok : 20.4077 : stalled 17 times (last best: 21.3571)
+[2021-06-15 19:17:17] Ep. 2 : Up. 135500 : Sen. 30,887,821 : Cost 2.51478529 * 11,617,801 @ 16,352 after 3,164,228,439 : Time 236.72s : 49078.10 words/s : gNorm 1.0678 : L.r. 1.0309e-04
+[2021-06-15 19:20:27] Ep. 2 : Up. 136000 : Sen. 31,350,754 : Cost 2.48833942 * 11,813,891 @ 22,080 after 3,176,042,330 : Time 190.11s : 62141.74 words/s : gNorm 0.8233 : L.r. 1.0290e-04
+[2021-06-15 19:23:36] Ep. 2 : Up. 136500 : Sen. 31,809,304 : Cost 2.48415995 * 11,635,033 @ 23,650 after 3,187,677,363 : Time 189.14s : 61516.58 words/s : gNorm 1.0693 : L.r. 1.0271e-04
+[2021-06-15 19:26:45] Ep. 2 : Up. 137000 : Sen. 32,268,161 : Cost 2.52946520 * 11,529,281 @ 34,040 after 3,199,206,644 : Time 188.93s : 61023.27 words/s : gNorm 0.8676 : L.r. 1.0252e-04
+[2021-06-15 19:29:54] Ep. 2 : Up. 137500 : Sen. 32,729,060 : Cost 2.49994922 * 11,767,061 @ 11,376 after 3,210,973,705 : Time 189.47s : 62104.73 words/s : gNorm 1.4056 : L.r. 1.0234e-04
+[2021-06-15 19:33:04] Ep. 2 : Up. 138000 : Sen. 33,187,900 : Cost 2.44937086 * 11,764,695 @ 23,712 after 3,222,738,400 : Time 189.41s : 62113.28 words/s : gNorm 1.7404 : L.r. 1.0215e-04
+[2021-06-15 19:36:13] Ep. 2 : Up. 138500 : Sen. 33,656,741 : Cost 2.50626993 * 11,515,240 @ 18,000 after 3,234,253,640 : Time 189.10s : 60896.34 words/s : gNorm 0.9323 : L.r. 1.0197e-04
+[2021-06-15 19:39:22] Ep. 2 : Up. 139000 : Sen. 34,117,035 : Cost 2.46985269 * 11,773,564 @ 25,456 after 3,246,027,204 : Time 189.48s : 62137.61 words/s : gNorm 0.7734 : L.r. 1.0178e-04
+[2021-06-15 19:42:31] Ep. 2 : Up. 139500 : Sen. 34,585,799 : Cost 2.49728417 * 11,481,811 @ 20,856 after 3,257,509,015 : Time 188.95s : 60767.60 words/s : gNorm 1.2664 : L.r. 1.0160e-04
+[2021-06-15 19:45:41] Ep. 2 : Up. 140000 : Sen. 35,033,744 : Cost 2.47693396 * 11,951,842 @ 29,520 after 3,269,460,857 : Time 189.69s : 63006.40 words/s : gNorm 0.7719 : L.r. 1.0142e-04
+[2021-06-15 19:45:41] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.iter140000.npz
+[2021-06-15 19:45:46] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz
+[2021-06-15 19:45:53] Saving Adam parameters
+[2021-06-15 19:45:58] [training] Saving training checkpoint to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz and /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.optimizer.npz
+[2021-06-15 19:46:16] [valid] Ep. 2 : Up. 140000 : cross-entropy : 64.3159 : stalled 9 times (last best: 63.908)
+[2021-06-15 19:46:16] [valid] Ep. 2 : Up. 140000 : perplexity : 7.60616 : stalled 9 times (last best: 7.50891)
+[2021-06-15 19:46:28] [valid] Ep. 2 : Up. 140000 : bleu-detok : 20.2665 : stalled 18 times (last best: 21.3571)
+[2021-06-15 19:49:37] Ep. 2 : Up. 140500 : Sen. 35,498,390 : Cost 2.47306609 * 11,691,172 @ 18,720 after 3,281,152,029 : Time 236.52s : 49428.96 words/s : gNorm 0.9346 : L.r. 1.0124e-04
+[2021-06-15 19:52:46] Ep. 2 : Up. 141000 : Sen. 35,958,516 : Cost 2.49794722 * 11,688,133 @ 23,688 after 3,292,840,162 : Time 188.72s : 61933.83 words/s : gNorm 0.9350 : L.r. 1.0106e-04
+[2021-06-15 19:55:56] Ep. 2 : Up. 141500 : Sen. 36,421,407 : Cost 2.48427510 * 11,654,883 @ 11,424 after 3,304,495,045 : Time 189.67s : 61449.80 words/s : gNorm 1.1337 : L.r. 1.0088e-04
+[2021-06-15 19:59:05] Ep. 2 : Up. 142000 : Sen. 36,872,133 : Cost 2.49243021 * 11,703,479 @ 17,064 after 3,316,198,524 : Time 188.85s : 61972.43 words/s : gNorm 0.7644 : L.r. 1.0070e-04
+[2021-06-15 20:02:14] Ep. 2 : Up. 142500 : Sen. 37,337,867 : Cost 2.47251892 * 11,665,640 @ 21,160 after 3,327,864,164 : Time 189.36s : 61605.68 words/s : gNorm 0.8445 : L.r. 1.0052e-04
+[2021-06-15 20:05:23] Ep. 2 : Up. 143000 : Sen. 37,781,630 : Cost 2.46804547 * 11,588,540 @ 30,240 after 3,339,452,704 : Time 189.04s : 61300.80 words/s : gNorm 1.4517 : L.r. 1.0035e-04
+[2021-06-15 20:08:32] Ep. 2 : Up. 143500 : Sen. 38,260,328 : Cost 2.49457479 * 11,619,024 @ 29,440 after 3,351,071,728 : Time 189.32s : 61373.68 words/s : gNorm 0.8650 : L.r. 1.0017e-04
+[2021-06-15 20:11:43] Ep. 2 : Up. 144000 : Sen. 38,719,861 : Cost 2.49808764 * 11,845,781 @ 23,712 after 3,362,917,509 : Time 190.16s : 62292.28 words/s : gNorm 0.8947 : L.r. 1.0000e-04
+[2021-06-15 20:14:52] Ep. 2 : Up. 144500 : Sen. 39,183,925 : Cost 2.48688364 * 11,758,076 @ 16,560 after 3,374,675,585 : Time 189.92s : 61910.25 words/s : gNorm 0.9622 : L.r. 9.9827e-05
+[2021-06-15 20:18:03] Ep. 2 : Up. 145000 : Sen. 39,640,411 : Cost 2.46523571 * 11,749,850 @ 28,952 after 3,386,425,435 : Time 190.30s : 61743.81 words/s : gNorm 0.7401 : L.r. 9.9655e-05
+[2021-06-15 20:18:03] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.iter145000.npz
+[2021-06-15 20:18:08] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz
+[2021-06-15 20:18:15] Saving Adam parameters
+[2021-06-15 20:18:20] [training] Saving training checkpoint to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz and /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.optimizer.npz
+[2021-06-15 20:18:37] [valid] Ep. 2 : Up. 145000 : cross-entropy : 64.4064 : stalled 10 times (last best: 63.908)
+[2021-06-15 20:18:38] [valid] Ep. 2 : Up. 145000 : perplexity : 7.62789 : stalled 10 times (last best: 7.50891)
+[2021-06-15 20:18:52] [valid] Ep. 2 : Up. 145000 : bleu-detok : 20.2394 : stalled 19 times (last best: 21.3571)
+[2021-06-15 20:18:53] Training finished
+[2021-06-15 20:18:53] Saving model weights and runtime parameters to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz
+[2021-06-15 20:19:00] Saving Adam parameters
+[2021-06-15 20:19:04] [training] Saving training checkpoint to /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz and /fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back/model/model/model.npz.optimizer.npz

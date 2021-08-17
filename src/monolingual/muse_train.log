@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/home/yunpengjiao/yunpengjiao/repos/MUSE/unsupervised.py", line 139, in <module>
+    evaluator.all_eval(to_log)
+  File "/mnt/magni0/yunpengjiao/repos/MUSE/src/evaluation/evaluator.py", line 217, in all_eval
+    self.word_translation(to_log)
+  File "/mnt/magni0/yunpengjiao/repos/MUSE/src/evaluation/evaluator.py", line 116, in word_translation
+    results = get_word_translation_accuracy(
+  File "/mnt/magni0/yunpengjiao/repos/MUSE/src/evaluation/word_translation.py", line 96, in get_word_translation_accuracy
+    dico = load_dictionary(path, word2id1, word2id2)
+  File "/mnt/magni0/yunpengjiao/repos/MUSE/src/evaluation/word_translation.py", line 49, in load_dictionary
+    assert os.path.isfile(path)
+AssertionError

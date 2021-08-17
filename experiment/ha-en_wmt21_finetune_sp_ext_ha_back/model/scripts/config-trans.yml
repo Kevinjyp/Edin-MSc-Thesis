@@ -1,0 +1,43 @@
+type: transformer
+disp-freq: 500
+save-freq: 5000
+max-length: 100
+keep-best: true
+
+transformer-dropout: 0.1
+dropout-src: 0.1
+dropout-trg: 0.1
+
+valid-freq: 5000
+valid-metrics:
+  - cross-entropy
+  - perplexity
+  - bleu-detok
+quiet-translation: true
+valid-mini-batch: 16
+beam-size: 12
+normalize: 1.0
+
+layer-normalization: true
+label-smoothing: 0.1
+enc-cell-depth: 2
+enc-depth: 6
+dec-depth: 6
+transformer-heads: 8
+transformer-postprocess-emb: d
+transformer-postprocess: dan
+
+learn-rate: 0.0003
+lr-report: true
+clip-norm: 5
+tied-embeddings: true
+exponential-smoothing: 1e-4
+early-stopping: 10
+lr-warmup: 16000
+lr-decay-inv-sqrt: 16000
+optimizer-params:
+  -  0.9
+  -  0.98
+  -  1e-9
+seed: 1111
+sync-sgd: true

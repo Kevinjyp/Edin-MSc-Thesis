@@ -1,0 +1,14 @@
+expt=01
+exp_dir=/fs/magni0/yunpengjiao/mscproject/experiment/ha-en_wmt21_finetune_sp_ext_ha_back
+working_dir=${exp_dir}/model
+data_dir=${exp_dir}/data
+
+src=ha
+tgt=en
+pair=$tgt$src
+
+moses_scripts=/fs/magni0/yunpengjiao/repos/moses-scripts/scripts
+marian_bin=/fs/magni0/yunpengjiao/repos/marian-dev/build-`hostname`
+bpe_scripts=/fs/magni0/yunpengjiao/repos/subword-nmt/subword_nmt
+
+devices="0 1 2 3 4 5 6 7" 

@@ -1,0 +1,16 @@
+expt=01
+working_dir=/home/jhelcl/work/gourmet/experiments/en-ha_opus/model
+
+src=en
+tgt=ha
+pair=$tgt$src
+
+train=all
+
+moses_scripts=/home/jhelcl/work/tools/mosesdecoder/scripts
+marian_bin=/home/jhelcl/marian-dev/build-nosentencepiece
+data_dir=/home/jhelcl/work/gourmet/experiments/en-ha_opus/data
+bpe_scripts=/home/jhelcl/work/tools/subword-nmt/subword_nmt
+
+devices="0 1" 
+

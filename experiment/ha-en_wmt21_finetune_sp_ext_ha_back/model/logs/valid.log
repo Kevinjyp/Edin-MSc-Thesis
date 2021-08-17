@@ -1,0 +1,91 @@
+[2021-06-15 04:56:15] [valid] Ep. 1 : Up. 5000 : cross-entropy : 107.529 : new best
+[2021-06-15 04:56:21] [valid] Ep. 1 : Up. 5000 : perplexity : 29.7305 : new best
+[2021-06-15 04:56:21] [valid] First sentence's tokens as scored:
+[2021-06-15 04:56:21] [valid] Decoding validation set with SentencePieceVocab for scoring
+[2021-06-15 04:56:21] [valid]   Hyp: It was sacked a police officer because the stabbing happened to Taylor , except other police none of them .
+[2021-06-15 04:56:21] [valid]   Ref: One police officer has been fired because of the Taylor incident , but charges have not been brought against the other officers .
+[2021-06-15 04:56:37] [valid] Ep. 1 : Up. 5000 : bleu-detok : 12.2618 : new best
+[2021-06-15 05:28:49] [valid] Ep. 1 : Up. 10000 : cross-entropy : 83.8979 : new best
+[2021-06-15 05:28:55] [valid] Ep. 1 : Up. 10000 : perplexity : 14.1075 : new best
+[2021-06-15 05:29:08] [valid] Ep. 1 : Up. 10000 : bleu-detok : 16.7025 : new best
+[2021-06-15 06:01:20] [valid] Ep. 1 : Up. 15000 : cross-entropy : 75.4967 : new best
+[2021-06-15 06:01:26] [valid] Ep. 1 : Up. 15000 : perplexity : 10.823 : new best
+[2021-06-15 06:01:39] [valid] Ep. 1 : Up. 15000 : bleu-detok : 18.5995 : new best
+[2021-06-15 06:33:52] [valid] Ep. 1 : Up. 20000 : cross-entropy : 71.5045 : new best
+[2021-06-15 06:33:58] [valid] Ep. 1 : Up. 20000 : perplexity : 9.5423 : new best
+[2021-06-15 06:34:12] [valid] Ep. 1 : Up. 20000 : bleu-detok : 19.2347 : new best
+[2021-06-15 07:06:24] [valid] Ep. 1 : Up. 25000 : cross-entropy : 69.1357 : new best
+[2021-06-15 07:06:30] [valid] Ep. 1 : Up. 25000 : perplexity : 8.8552 : new best
+[2021-06-15 07:06:43] [valid] Ep. 1 : Up. 25000 : bleu-detok : 19.621 : new best
+[2021-06-15 07:38:57] [valid] Ep. 1 : Up. 30000 : cross-entropy : 67.6977 : new best
+[2021-06-15 07:39:05] [valid] Ep. 1 : Up. 30000 : perplexity : 8.46247 : new best
+[2021-06-15 07:39:22] [valid] Ep. 1 : Up. 30000 : bleu-detok : 20.1852 : new best
+[2021-06-15 08:11:34] [valid] Ep. 1 : Up. 35000 : cross-entropy : 66.8173 : new best
+[2021-06-15 08:11:40] [valid] Ep. 1 : Up. 35000 : perplexity : 8.23066 : new best
+[2021-06-15 08:11:54] [valid] Ep. 1 : Up. 35000 : bleu-detok : 20.685 : new best
+[2021-06-15 08:44:05] [valid] Ep. 1 : Up. 40000 : cross-entropy : 66.0873 : new best
+[2021-06-15 08:44:11] [valid] Ep. 1 : Up. 40000 : perplexity : 8.04329 : new best
+[2021-06-15 08:44:19] [valid] Ep. 1 : Up. 40000 : bleu-detok : 20.6691 : stalled 1 times (last best: 20.685)
+[2021-06-15 09:16:33] [valid] Ep. 1 : Up. 45000 : cross-entropy : 65.557 : new best
+[2021-06-15 09:16:39] [valid] Ep. 1 : Up. 45000 : perplexity : 7.90986 : new best
+[2021-06-15 09:16:52] [valid] Ep. 1 : Up. 45000 : bleu-detok : 21.1402 : new best
+[2021-06-15 09:49:05] [valid] Ep. 1 : Up. 50000 : cross-entropy : 65.1492 : new best
+[2021-06-15 09:49:11] [valid] Ep. 1 : Up. 50000 : perplexity : 7.80876 : new best
+[2021-06-15 09:49:25] [valid] Ep. 1 : Up. 50000 : bleu-detok : 21.3571 : new best
+[2021-06-15 10:21:38] [valid] Ep. 1 : Up. 55000 : cross-entropy : 64.8552 : new best
+[2021-06-15 10:21:44] [valid] Ep. 1 : Up. 55000 : perplexity : 7.73665 : new best
+[2021-06-15 10:22:01] [valid] Ep. 1 : Up. 55000 : bleu-detok : 21.0964 : stalled 1 times (last best: 21.3571)
+[2021-06-15 10:54:14] [valid] Ep. 1 : Up. 60000 : cross-entropy : 64.5635 : new best
+[2021-06-15 10:54:20] [valid] Ep. 1 : Up. 60000 : perplexity : 7.66579 : new best
+[2021-06-15 10:54:31] [valid] Ep. 1 : Up. 60000 : bleu-detok : 21.0752 : stalled 2 times (last best: 21.3571)
+[2021-06-15 11:26:43] [valid] Ep. 1 : Up. 65000 : cross-entropy : 64.3507 : new best
+[2021-06-15 11:26:49] [valid] Ep. 1 : Up. 65000 : perplexity : 7.61449 : new best
+[2021-06-15 11:27:02] [valid] Ep. 1 : Up. 65000 : bleu-detok : 21.1448 : stalled 3 times (last best: 21.3571)
+[2021-06-15 11:59:16] [valid] Ep. 1 : Up. 70000 : cross-entropy : 64.1968 : new best
+[2021-06-15 11:59:22] [valid] Ep. 1 : Up. 70000 : perplexity : 7.57763 : new best
+[2021-06-15 11:59:35] [valid] Ep. 1 : Up. 70000 : bleu-detok : 21.1046 : stalled 4 times (last best: 21.3571)
+[2021-06-15 12:31:49] [valid] Ep. 1 : Up. 75000 : cross-entropy : 64.0633 : new best
+[2021-06-15 12:31:55] [valid] Ep. 1 : Up. 75000 : perplexity : 7.54578 : new best
+[2021-06-15 12:32:08] [valid] Ep. 1 : Up. 75000 : bleu-detok : 20.9154 : stalled 5 times (last best: 21.3571)
+[2021-06-15 13:04:20] [valid] Ep. 1 : Up. 80000 : cross-entropy : 64.0134 : new best
+[2021-06-15 13:04:26] [valid] Ep. 1 : Up. 80000 : perplexity : 7.5339 : new best
+[2021-06-15 13:04:39] [valid] Ep. 1 : Up. 80000 : bleu-detok : 20.577 : stalled 6 times (last best: 21.3571)
+[2021-06-15 13:36:54] [valid] Ep. 1 : Up. 85000 : cross-entropy : 63.9392 : new best
+[2021-06-15 13:37:00] [valid] Ep. 1 : Up. 85000 : perplexity : 7.5163 : new best
+[2021-06-15 13:37:14] [valid] Ep. 1 : Up. 85000 : bleu-detok : 20.6862 : stalled 7 times (last best: 21.3571)
+[2021-06-15 14:09:27] [valid] Ep. 1 : Up. 90000 : cross-entropy : 63.913 : new best
+[2021-06-15 14:09:33] [valid] Ep. 1 : Up. 90000 : perplexity : 7.51009 : new best
+[2021-06-15 14:09:45] [valid] Ep. 1 : Up. 90000 : bleu-detok : 20.5783 : stalled 8 times (last best: 21.3571)
+[2021-06-15 14:42:01] [valid] Ep. 1 : Up. 95000 : cross-entropy : 63.908 : new best
+[2021-06-15 14:42:07] [valid] Ep. 1 : Up. 95000 : perplexity : 7.50891 : new best
+[2021-06-15 14:42:20] [valid] Ep. 1 : Up. 95000 : bleu-detok : 20.8309 : stalled 9 times (last best: 21.3571)
+[2021-06-15 15:14:27] [valid] Ep. 1 : Up. 100000 : cross-entropy : 63.9431 : stalled 1 times (last best: 63.908)
+[2021-06-15 15:14:28] [valid] Ep. 1 : Up. 100000 : perplexity : 7.51721 : stalled 1 times (last best: 7.50891)
+[2021-06-15 15:14:44] [valid] Ep. 1 : Up. 100000 : bleu-detok : 20.8001 : stalled 10 times (last best: 21.3571)
+[2021-06-15 15:59:53] [valid] Ep. 2 : Up. 105000 : cross-entropy : 64.0089 : stalled 2 times (last best: 63.908)
+[2021-06-15 15:59:54] [valid] Ep. 2 : Up. 105000 : perplexity : 7.53284 : stalled 2 times (last best: 7.50891)
+[2021-06-15 16:00:07] [valid] Ep. 2 : Up. 105000 : bleu-detok : 20.668 : stalled 11 times (last best: 21.3571)
+[2021-06-15 16:32:16] [valid] Ep. 2 : Up. 110000 : cross-entropy : 64.0729 : stalled 3 times (last best: 63.908)
+[2021-06-15 16:32:16] [valid] Ep. 2 : Up. 110000 : perplexity : 7.54807 : stalled 3 times (last best: 7.50891)
+[2021-06-15 16:32:30] [valid] Ep. 2 : Up. 110000 : bleu-detok : 20.6615 : stalled 12 times (last best: 21.3571)
+[2021-06-15 17:04:37] [valid] Ep. 2 : Up. 115000 : cross-entropy : 64.0914 : stalled 4 times (last best: 63.908)
+[2021-06-15 17:04:37] [valid] Ep. 2 : Up. 115000 : perplexity : 7.55246 : stalled 4 times (last best: 7.50891)
+[2021-06-15 17:04:47] [valid] Ep. 2 : Up. 115000 : bleu-detok : 20.3727 : stalled 13 times (last best: 21.3571)
+[2021-06-15 17:36:56] [valid] Ep. 2 : Up. 120000 : cross-entropy : 64.0979 : stalled 5 times (last best: 63.908)
+[2021-06-15 17:36:57] [valid] Ep. 2 : Up. 120000 : perplexity : 7.55401 : stalled 5 times (last best: 7.50891)
+[2021-06-15 17:37:07] [valid] Ep. 2 : Up. 120000 : bleu-detok : 20.2893 : stalled 14 times (last best: 21.3571)
+[2021-06-15 18:09:13] [valid] Ep. 2 : Up. 125000 : cross-entropy : 64.1294 : stalled 6 times (last best: 63.908)
+[2021-06-15 18:09:14] [valid] Ep. 2 : Up. 125000 : perplexity : 7.56153 : stalled 6 times (last best: 7.50891)
+[2021-06-15 18:09:24] [valid] Ep. 2 : Up. 125000 : bleu-detok : 20.207 : stalled 15 times (last best: 21.3571)
+[2021-06-15 18:41:33] [valid] Ep. 2 : Up. 130000 : cross-entropy : 64.1829 : stalled 7 times (last best: 63.908)
+[2021-06-15 18:41:34] [valid] Ep. 2 : Up. 130000 : perplexity : 7.57431 : stalled 7 times (last best: 7.50891)
+[2021-06-15 18:41:46] [valid] Ep. 2 : Up. 130000 : bleu-detok : 20.1747 : stalled 16 times (last best: 21.3571)
+[2021-06-15 19:13:54] [valid] Ep. 2 : Up. 135000 : cross-entropy : 64.2421 : stalled 8 times (last best: 63.908)
+[2021-06-15 19:13:55] [valid] Ep. 2 : Up. 135000 : perplexity : 7.58846 : stalled 8 times (last best: 7.50891)
+[2021-06-15 19:14:08] [valid] Ep. 2 : Up. 135000 : bleu-detok : 20.4077 : stalled 17 times (last best: 21.3571)
+[2021-06-15 19:46:16] [valid] Ep. 2 : Up. 140000 : cross-entropy : 64.3159 : stalled 9 times (last best: 63.908)
+[2021-06-15 19:46:16] [valid] Ep. 2 : Up. 140000 : perplexity : 7.60616 : stalled 9 times (last best: 7.50891)
+[2021-06-15 19:46:28] [valid] Ep. 2 : Up. 140000 : bleu-detok : 20.2665 : stalled 18 times (last best: 21.3571)
+[2021-06-15 20:18:37] [valid] Ep. 2 : Up. 145000 : cross-entropy : 64.4064 : stalled 10 times (last best: 63.908)
+[2021-06-15 20:18:38] [valid] Ep. 2 : Up. 145000 : perplexity : 7.62789 : stalled 10 times (last best: 7.50891)
+[2021-06-15 20:18:52] [valid] Ep. 2 : Up. 145000 : bleu-detok : 20.2394 : stalled 19 times (last best: 21.3571)
